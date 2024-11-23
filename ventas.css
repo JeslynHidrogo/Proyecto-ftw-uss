@@ -1,15 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    margin: 0;
-    padding: 20px;
+
+.productos-container{
+    position: relative;
+    top: 95px;
 }
 
-.productos-container {
+.productos-container-cards{
     display: flex;
     gap: 20px; /* Espacio entre tarjetas */
     flex-wrap: wrap; /* Permite que las tarjetas se ajusten automáticamente */
     justify-content: center; /* Centra las tarjetas */
+    margin-bottom: 2rem;
+    
 }
 
 .producto-card {
