@@ -151,8 +151,8 @@ body{
 }
 
 .swiper {
-    height: 454px;
-    width: 1366px;
+    height: auto;
+    width: 100%;
 }
 
 .swiper-slide {
@@ -192,7 +192,8 @@ body{
 
 
 .informacion{
-    width: 100%;
+    position: relative;
+    top: 80px;
 }
 
 .cate-info{
@@ -227,6 +228,8 @@ body{
 .productos {
     text-align: center;
     margin: 40px 0;
+    position: relative;
+    top: 80px;
 }
 
 .productos h2 {
@@ -249,6 +252,8 @@ body{
     grid-template-columns: 1fr; 
     gap: 40px;
     padding: 20px;
+    position: relative;
+    top: 80px;
 }
 
 @media (min-width: 1024px) {
@@ -282,6 +287,8 @@ body{
     border-top: 5px solid #ff712a;
     color: #fff; 
     padding: 20px 0;
+    position: relative;
+    top: 80px;
 }
 
 .footer-container {
