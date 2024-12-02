@@ -1,3 +1,9 @@
+.titulo-seccion {
+    font-size: 2.5rem; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Centra el título */
+    color: #0000009c; /* Color del texto */
+}
 
 .productos-container{
     position: relative;
