@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ukeleles</title>
+    <title>Guitarras</title>
     <link rel="stylesheet" href="../css/menu-footer.css">
     <link rel="stylesheet" href="../css/guitarras.css">
+
 </head>
+
 <body>
     <header class="menu">
 
@@ -34,7 +37,7 @@
             <div class="menu-inf-ctn">
 
                 <div class="menu-logo">
-                    <img src="../img/logo.png" alt="">
+                    <a href="../index.html"><img src="../img/logo.png" alt=""></a>
                 </div>
 
                 <div class="menu-links">
@@ -43,22 +46,22 @@
                         <li class="dropdown">
                             <a href="#nosotros">Nosotros <span class="dropdown-icon">▼</span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="./html/mision-vision.html">MyV</a></li>
-                                <li><a href="#ubicacion">Ubicación</a></li>
+                                <li><a href="mision-vision.html">Misión y Visión</a></li>
+                                <li><a href="#ubicacion">Ubicación</a></li>      <!--FALTAAA-->
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#categorias">Categorías <span class="dropdown-icon">▼</span></a>
+                            <a href="#categorias" class="selected">Categorías <span class="dropdown-icon selected">▼</span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="../html/guitarras.html">Guitarras</a></li>
-                                <li><a href="../html/ukeleles.html">Ukeleles</a></li>
-                                <li><a href="#cat3">Violines</a></li>
-                                <li><a href="#cat4">Teclados</a></li>
-                                <li><a href="#cat5">Baterias</a></li>
-                                <li><a href="#cat6">Accesorios</a></li>
+                                <li><a href="guitarras.html">Guitarras</a></li> <!--CAMBIAR SELECCION-->
+                                <li><a href="ukeleles.html" class="selected">Ukeleles</a></li>
+                                <li><a href="violines.html">Violines</a></li>
+                                <li><a href="teclados.html">Teclados</a></li>
+                                <li><a href="baterias.html">Baterias</a></li>
+                                <li><a href="accesorios.html">Accesorios</a></li>
                             </ul>
                         </li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#footer">Contacto</a></li>
                     </ul>
                 </div>
 
@@ -74,7 +77,22 @@
 
     </header>
 
-    <section class="guitarras" style="margin-top: 25vh;">
+    <section class="hero-gt">
+        <div class="hero-gt-ctn">
+            <div class="hero-gt-title">
+                <h1>El Arte de las Cuatro <span class="hero-mod">Cuerdas</span></h1>
+                <h2>Melodia / <span class="hero-mod"> Ritmo </span> / Alegría</h2>
+                <p>"Pequeño en tamaño, pero gigante en alma. El ukelele evoca sonidos cálidos y alegres que te transportan a playas soleadas y momentos felices. Con su vibración única y su tono suave, es el compañero ideal para quienes buscan melodías frescas."</p>
+            </div>
+
+            <div class="hero-gt-img">
+                <img src="https://media.istockphoto.com/id/1190645702/es/foto/mano-de-hombre-tocando-guitarra-ac%C3%BAstica.jpg?s=612x612&w=0&k=20&c=xsGCqf0j9bzDM1yAXqxSGcUwLJCFz17UYofqCrTigqg=" alt="">
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="guitarras">
         <div class="guitarras-ctn">
 
             <div class="gtr-title">
@@ -150,9 +168,67 @@
         </div>
     </section>
 
+    <footer>
+
+        <div id="footer" class="footer-ctn">
+            <div class="ft-logo">
+                <img src="../img/logonar.png" alt="">
+            </div>
+            <div class="ft-info">
+                <p class="ft-inf-title">Menu</p>
+                <a href="mision-vision.html">Nosotros</a>
+                <a href="">Misión y Visión</a>
+                <a href="">Compromiso</a>                   <!--falta indicar-->
+                <a href="">Ubicacion</a>
+                <a href="">Productos</a>
+            </div>
+
+            <div class="ft-redes">
+
+                <p class="ft-title">Redes</p>
+
+                <div class="redes-items">
+
+                    <div class="face">
+                        <img class="redes-icon" src="../img/wsp.svg" alt="">
+                        <a class="a-redes" href="">Whatsapp</a>
+                    </div>
+                    
+                    <div class="face">
+                        <img class="redes-icon" src="../img/facebook.svg" alt="">
+                        <a class="a-redes" href="">Facebook</a>
+                    </div>
+
+                    <div class="insta">
+                        <img class="redes-icon" src="../img/instagram.svg" alt="">
+                        <a class="a-redes" href="">Instagram</a>
+                    </div>
+                    <div class="ttk">
+                        <img class="redes-icon" src="../img/tiktok.svg" alt="">
+                        <a class="a-redes" href="">TikTok</a>
+                    </div>
+                    <div class="yout">
+                        <img class="redes-icon" src="../img/youtube.svg" alt="">
+                        <a class="a-redes" href="">Youtube</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="ft-book">
+                <p class="ft-title">Libro de Reclamaciones</p>
+                <a href=""> <img src="../img/libro.svg" alt=""></a>
+                <p class="copy">
+                    &copy; 2024 Colmenares. Todos los <br>derechos reservados.
+                </p>
+
+            </div>
+
+        </div>
+    </footer> 
 
 
-
-
+    <script src="../js/index.js"></script>
 </body>
+
 </html>
