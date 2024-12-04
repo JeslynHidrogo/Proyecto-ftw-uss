@@ -17,6 +17,7 @@ body{
     --color1: #440c06;
     --color3: #440c06d0;
     --color2: #fff5ed;
+    --color8: #832b02a4;
 }
 
 
@@ -101,8 +102,8 @@ body{
     display: flex;
     align-items: center;
     padding: 1rem;
-    border: 1px solid #ddd; /*QUITA EL BORDE SI NO LO REQUIERES*/
-    border-radius: 8px;
+    /*border: 1px solid #ddd; 
+    border-radius: 8px;*/
     height: 8rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -187,7 +188,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--color3); 
+    background-color: var(--color8); 
     display: flex;
     justify-content: center;
     align-items: center;
