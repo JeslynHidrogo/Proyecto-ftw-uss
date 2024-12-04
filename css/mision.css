@@ -148,3 +148,42 @@
     font-weight: 500;
     font-size: 16px;
 }
+
+/*UBI*/
+
+.contenido-three {
+    width: 100%;
+    margin: 0 0 20vh 0;
+    display: flex;
+    
+}
+
+.contenido3 {
+    max-width: 90%;
+    margin: auto;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contenido3 h3 {
+    color: #FF712A;
+    font-weight: 600;
+    padding-bottom: 25px ;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.ubi {
+    margin: 35px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    width: 320px;
+    text-align: center;
+}
