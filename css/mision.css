@@ -37,6 +37,7 @@
 
 .nst-img{
     display: flex;
+    height: 24rem;
     justify-content: center;
 }
 
