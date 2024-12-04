@@ -1,0 +1,150 @@
+:root{
+    --primary-color: #FF712A;
+    --second-color: #F0F0F0;
+    --color1: #440c06;
+    --color3: #440c06d0;
+    --color2: #fff5ed;
+    --colorp: #3d4349;
+}
+
+.nosotros{
+    margin: 150px 0;
+    width: 100%;
+}
+
+.nosotros-ctn{
+    max-width: 85%;
+    margin: auto;
+}
+
+.nst-title{
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.nosotros-abt{
+ margin-top: 5vh;
+ display: flex;
+}
+
+.nst-img, .nst-p{
+    width: 50%;
+}
+
+.nst-img{
+    display: flex;
+    justify-content: center;
+}
+
+.nst-p{
+    display: flex;
+    align-items: center
+}
+
+.nst-p p{
+    color: #3d4349;
+    width: 85%;
+    line-height: 28px;
+}
+
+
+/* //////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+
+.mivi {
+    width: 100%;
+    margin-bottom: 20vh;
+}
+
+.mivi-ctn {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem; 
+}
+
+.card {
+    width: 500px;
+    border: 2px solid #ffa971;
+    padding: 25px 36px;
+    border-radius: 10px;
+    text-align: center; 
+    cursor: pointer;
+}
+
+.card-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 1.5rem; 
+    margin-top: 1rem;
+}
+
+.card img {
+    width: 50px;
+    
+}
+
+.card p {
+    color: var(--colorp);
+    font-size: 15px;
+    line-height: 26px;
+    text-align: start;
+}
+
+
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////*/
+
+.contenido-two {
+    width: 100%;
+    margin: 0 0 20vh 0;
+}
+
+.contenido2 {
+    max-width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.contenido2 h3 {
+    color: #FF712A;
+    font-weight: 600;
+    padding-bottom: 25px ;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.cards {
+    margin: 35px 0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.item {
+    width: 320px;
+}
+
+.item-2 {
+    margin: 0 25px;
+}
+
+.item p {
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 16px;
+}

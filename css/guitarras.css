@@ -1,0 +1,187 @@
+
+.hero-gt {
+    margin-top: 85px;
+    height: calc(80vh - 85px);
+    width: 100%;
+}
+
+.hero-gt-ctn{
+    max-width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+}
+
+.hero-gt-title{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-gt-title h1{
+    font-size: 3rem;
+    color: #160402;
+    line-height: 60px;
+    margin-bottom: 19px;
+    font-weight: 600;
+}
+
+.hero-mod{
+    color: #ff712a;
+}
+
+.hero-gt-title h2{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 19px;
+}
+
+.hero-gt-title p{
+    line-height: 30px;
+    font-weight: 400;
+    color: #414850;
+    font-size: 15px;
+    width: 90%;
+}
+
+.hero-gt-img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-gt-img img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+/*/////////////////////////////////////////*/
+/*/////////////////////////////////////////*/
+/*/////////////////////////////////////////*/
+
+
+
+.guitarras{
+    width: 100%;
+    margin: 5vh 0;
+}
+
+.guitarras-ctn{
+    max-width: 80%;
+    margin: auto;
+}
+
+.gtr-title{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0;
+}
+
+.gtr-title h1 {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0 10px; 
+    color: #ff712a;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.gtr-title h1::before,
+.gtr-title h1::after {
+    content: '';
+    display: inline-block;
+    width: 400px; 
+    height: 1px;
+    background-color: #ff712a;
+    vertical-align: middle;
+}
+
+.gtr-title h1::before {
+    margin-right: 20px; 
+}
+
+.gtr-title h1::after {
+    margin-left: 20px; 
+}
+
+
+
+.gtr-cards{
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.gtr-card{
+    width: 320px;
+    height: 494px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.gtr-card img{
+    width: 60%;
+    margin: 25px 0 15px 0;
+    cursor: pointer;
+}
+
+.gtr-card h3{
+    text-align: center;
+    font-size: 15px;
+    color: #414850;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.gtr-card h2{
+    text-align: center;
+    font-size: 18px;
+    width: 85%;
+    margin: 5px 0 15px 0;
+    font-weight: 600;
+}
+
+.gtr-card p{
+   font-weight: 500;
+   color: #414850;
+
+}
+
+
+.gtr-card a{
+    width: 90%;
+    background-color: #ff712a;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin: 19px 0 ;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
