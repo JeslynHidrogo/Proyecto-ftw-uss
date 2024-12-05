@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <link rel="stylesheet" href="../css/menu-footer.css">
+    <link rel="stylesheet" href="../css/crearcuenta.css">
+
+</head>
+
+<body>
+    <header class="menu">
+
+        <div class="menu-sup">
+            <div class="menu-sup-ctn">
+                <div class="menu-items">
+                    <a href="https://www.facebook.com/colmemusic?locale=es_LA"><img src="../img/facebook.svg"
+                            alt=""></a>
+                    <a href="https://www.instagram.com/colmenares_instrumentos/"><img src="../img/instagram.svg"
+                            alt=""></a>
+                    <a href="https://www.tiktok.com/@colmenarescix?_t=8rjL0mUXrvz&_r=1"><img src="../img/tiktok.svg"
+                            alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCBYloQzyO20TZfttyNlC_Lg"><img src="../img/youtube.svg"
+                            alt=""></a>
+                </div>
+                <div class="menu-telf">
+                    <img src="/img/phone.svg" alt="">
+                    <a href="tel:+51979224000">979 224 000</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-inf">
+
+            <div class="menu-inf-ctn">
+
+                <div class="menu-logo">
+                    <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+                </div>
+
+                <div class="menu-links">
+                    <ul class="menu-dp">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li class="dropdown">
+                            <a href="#nosotros">Nosotros <span class="dropdown-icon">▼</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="mision-vision.html">Misión y Visión</a></li>
+                                <li><a href="#ubicacion">Ubicación</a></li>      <!--FALTAAA-->
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#categorias">Productos <span class="dropdown-icon">▼</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="html/guitarras.html">Guitarras</a></li>
+                                <li><a href="html/ukeleles.html">Ukeleles</a></li>
+                                <li><a href="html/violines.html">Violines</a></li>
+                                <li><a href="html/teclados.html">Teclados</a></li>
+                                <li><a href="html/baterias.html">Baterias</a></li>
+                                <li><a href="html/accesorios.html">Accesorios</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#footer">Contacto</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="menu-perfil">
+                    <a href=""><img src="../img/cart.svg" alt=""></a>
+                    <a href=""><img src="../img/user.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Formulario para Crear Cuenta -->
+<div class="form-container">
+    <div class="form-group">
+        <h2>Crear Cuenta</h2>
+        <form id="form-crear-cuenta">
+            <label for="nombres">Nombres</label>
+            <input type="text" id="nombres" name="nombres" required>
+
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="dni">DNI</label>
+            <input type="text" id="dni" name="dni" maxlength="8" required>
+
+            <label for="gmail">Gmail</label>
+            <input type="email" id="gmail" name="gmail" required>
+
+            <label for="telefono">Número de Teléfono </label>
+            <input type="text" id="telefono" name="telefono" maxlength="9" required>
+
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+
+            <button type="submit">Crear Cuenta</button>
+        </form>
+        <div id="mensaje"></div>
+        <div class="register-link">
+            <p>¿Ya tienes cuenta? <a href="login.html">Iniciar sesión</a></p>
+        </div>
+    </div>
+</div>
+
+
+
+    <footer>
+
+        <div id="footer" class="footer-ctn">
+            <div class="ft-logo">
+                <img src="../img/logonar.png" alt="">
+            </div>
+            <div class="ft-info">
+                <p class="ft-inf-title">Menu</p>
+                <a href="mision-vision.html">Nosotros</a>
+                <a href="">Misión y Visión</a>
+                <a href="">Compromiso</a>                   <!--falta indicar-->
+                <a href="">Ubicacion</a>
+                <a href="">Productos</a>
+            </div>
+
+            <div class="ft-redes">
+
+                <p class="ft-title">Redes</p>
+
+                <div class="redes-items">
+
+                    <div class="face">
+                        <img class="redes-icon" src="../img/wsp.svg" alt="">
+                        <a class="a-redes" href="">Whatsapp</a>
+                    </div>
+                    
+                    <div class="face">
+                        <img class="redes-icon" src="../img/facebook.svg" alt="">
+                        <a class="a-redes" href="">Facebook</a>
+                    </div>
+
+                    <div class="insta">
+                        <img class="redes-icon" src="../img/instagram.svg" alt="">
+                        <a class="a-redes" href="">Instagram</a>
+                    </div>
+                    <div class="ttk">
+                        <img class="redes-icon" src="../img/tiktok.svg" alt="">
+                        <a class="a-redes" href="">TikTok</a>
+                    </div>
+                    <div class="yout">
+                        <img class="redes-icon" src="../img/youtube.svg" alt="">
+                        <a class="a-redes" href="">Youtube</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="ft-book">
+                <p class="ft-title">Libro de Reclamaciones</p>
+                <a href=""> <img src="../img/libro.svg" alt=""></a>
+                <p class="copy">
+                    &copy; 2024 Colmenares. Todos los <br>derechos reservados.
+                </p>
+
+            </div>
+
+        </div>
+    </footer> 
+
+    <script src="../js/crearcuenta.js"></script>
+</body>
+</html>
