@@ -6,7 +6,10 @@
     min-height: 60vh; /* Asegura que ocupe el espacio central */
     background-color: var(--second-color); /* Puedes cambiar el fondo */
 }
-
+.login-section button a{
+    color: white;
+    text-decoration: none;
+}
 .login-container {
     background-color: white;
     padding: 40px;

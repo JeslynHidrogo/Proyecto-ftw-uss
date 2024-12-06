@@ -5,9 +5,9 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
     const password = document.getElementById('password').value.trim();
 
     if (!usuario || !password) {
-        alert("Por favor, llena ambos campos.");
+        ("Por favor, llena ambos campos.");
     } else {
-        alert("Inicio de sesión exitoso.");
+        ("Inicio de sesión exitoso.");
         // Puedes añadir lógica para redirigir o enviar datos.
     }
 });
