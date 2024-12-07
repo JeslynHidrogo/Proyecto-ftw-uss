@@ -62,13 +62,13 @@ En todas las páginas del proyecto se ha implementado un carrito de compras, ubi
 ---
 
 ## Terminado 
--index Terminado
--Guitarras Terminado
--Mision Vision Terminado
+-index Terminado.
+-Guitarras Terminado.
+-Mision Vision Terminado.
 
 ## Por Terminar
--Responsive en todas las Paginas 
--Todas las paginas de los productos menos guitarras 
--Contacto
--linkeo del menu y footer 
--pagina de pago //terminado solo hasta el detalle de carrito
+-Responsive en todas las Paginas .
+-Todas las paginas de los productos menos guitarras.
+-Contacto.
+-linkeo del menu y footer. 
+-pagina de pago //terminado solo hasta el detalle de carrito.
