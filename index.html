@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/menu-footer.css">
+    <link rel="stylesheet" href="./css/carrito.css">
 </head>
 
 <body>
@@ -17,8 +18,7 @@
         <div class="menu-sup">
             <div class="menu-sup-ctn">
                 <div class="menu-items">
-                    <a href="https://www.facebook.com/colmemusic?locale=es_LA"><img src="img/facebook.svg"
-                            alt=""></a>
+                    <a href="https://www.facebook.com/colmemusic?locale=es_LA"><img src="img/facebook.svg" alt=""></a>
                     <a href="https://www.instagram.com/colmenares_instrumentos/"><img src="img/instagram.svg"
                             alt=""></a>
                     <a href="https://www.tiktok.com/@colmenarescix?_t=8rjL0mUXrvz&_r=1"><img src="img/tiktok.svg"
@@ -49,7 +49,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="./html/mision-vision.html#myv">Misión y Visión</a></li>
                                 <li><a href="./html/mision-vision.html#ubicacion">Ubicación</a></li>
-                                
+
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -69,8 +69,8 @@
 
 
                 <div class="menu-perfil">
-                    <a href=""><img src="img/cart.svg" alt=""></a>                  <!--CARRITO-->
-                    <a href="./html/login.html"><img src="img/user.svg" alt=""></a>
+                    <span class="cart-icon" onclick="toggleModal()"><img src="./img/cart.svg" alt=""></span>
+                    <a href=""><img src="./img/user.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -79,14 +79,43 @@
 
     </header>
 
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////MODAL DEL CARRITO///////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="modal" id="cartModal">
+        <div class="modal-header">
+            <h2>Carrito de Compras</h2>
+            <span class="close" onclick="toggleModal()">×</span>
+        </div>
+        <div id="cartItems">
+            <!-- Los productos se agregarán aquí dinámicamente -->
+        </div>
+        <div class="modal-footer">
+            <div class="total-price" id="totalPrice"><b>Total:</b> S/0.00</div>
+            <button onclick="checkout()">Pagar</button>
+        </div>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////FIN MODAL DEL CARRITO///////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
     <section class="hero">
         <div class="galeria-ctn">
 
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"> <img src="https://audiomusica.vtexassets.com/assets/vtex.file-manager-graphql/images/3e7f3980-efc8-4ed3-a68d-62a78b94d633___3c998c9e715682ba04e97fd3ad8bbbb8.gif" alt="Imagen 1"> </div>
-                    <div class="swiper-slide"> <img src="./img/banner2.png" alt="Imagen 2"> </div>
-                    <div class="swiper-slide"> <img src="./img/banner3.png" alt="Imagen 2"> </div>
+                    <div class="swiper-slide"> <img
+                            src="https://audiomusica.vtexassets.com/assets/vtex.file-manager-graphql/images/3e7f3980-efc8-4ed3-a68d-62a78b94d633___3c998c9e715682ba04e97fd3ad8bbbb8.gif"
+                            alt="Imagen 1"> </div>
+                    <div class="swiper-slide"> <img
+                            src="https://audiomusica.vtexassets.com/assets/vtex.file-manager-graphql/images/72c8ef3a-b9b6-47b1-ba27-d99dc0680da1___21e79428ea9381773fcb35a749752321.gif"
+                            alt="Imagen 2"> </div>
+                    <div class="swiper-slide"> <img
+                            src="https://audiomusica.vtexassets.com/assets/vtex.file-manager-graphql/images/ca5a5625-1021-417a-8507-368abc56fbeb___0372f16edf152f87106ba0854b9c68f9.gif"
+                            alt="Imagen 2"> </div>
                 </div>
 
                 <!-- Paginación -->
@@ -143,7 +172,7 @@
         </div>
     </section>
 
-    <section  class="productos">
+    <section class="productos">
         <div class="productos-ctn">
             <p id="productos" class="produ-title">Productos</p>
 
@@ -207,7 +236,7 @@
                 <a href="html/mision-vision.html#compromiso">Compromiso</a>
                 <a href="html/mision-vision.html#ubicacion">Ubicación</a>
                 <a href="index.html#productos">Productos</a>
-           
+
             </div>
 
             <div class="ft-redes">
@@ -220,7 +249,7 @@
                         <img class="redes-icon" src="./img/wsp.svg" alt="">
                         <a class="a-redes" href="https://wa.me/979224000">Whatsapp</a>
                     </div>
-                    
+
                     <div class="face">
                         <img class="redes-icon" src="./img/facebook.svg" alt="">
                         <a class="a-redes" href="https://www.facebook.com/colmemusic?locale=es_LA">Facebook</a>
@@ -245,10 +274,10 @@
             <div class="ft-book">
                 <p class="ft-title">Libro de Reclamaciones</p>
                 <a href=""> <img src="./img/libro.svg" alt=""></a>
-                <p  class="copy">
+                <p class="copy">
                     &copy; 2024 Colmenares. Todos los <br>derechos reservados.
                 </p>
-                
+
             </div>
 
         </div>
@@ -257,6 +286,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/carrito.js"></script>
 </body>
 
 </html>
