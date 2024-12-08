@@ -7,6 +7,7 @@
     <title>Guitarras</title>
     <link rel="stylesheet" href="../css/menu-footer.css">
     <link rel="stylesheet" href="../css/guitarras.css">
+    <link rel="stylesheet" href="../css/carrito.css">
 
 </head>
 
@@ -26,7 +27,7 @@
                             alt=""></a>
                 </div>
                 <div class="menu-telf">
-                    <img src="/img/phone.svg" alt="">
+                    <img src="../img/phone.svg" alt="">
                     <a href="tel:+51979224000">979 224 000</a>
                 </div>
             </div>
@@ -47,13 +48,15 @@
                             <a href="#nosotros">Nosotros <span class="dropdown-icon">▼</span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="mision-vision.html">Misión y Visión</a></li>
-                                <li><a href="#ubicacion">Ubicación</a></li>      <!--FALTAAA-->
+                                <li><a href="#ubicacion">Ubicación</a></li> <!--FALTAAA-->
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#categorias" class="selected">Categorías <span class="dropdown-icon selected">▼</span></a>
+                            <a href="#categorias" class="selected">Categorías <span
+                                    class="dropdown-icon selected">▼</span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="guitarras.html" class="selected">Guitarras</a></li> <!--CAMBIAR SELECCION-->
+                                <li><a href="guitarras.html" class="selected">Guitarras</a></li>
+                                <!--CAMBIAR SELECCION-->
                                 <li><a href="ukeleles.html">Ukeleles</a></li>
                                 <li><a href="violines.html">Violines</a></li>
                                 <li><a href="teclados.html">Teclados</a></li>
@@ -67,28 +70,51 @@
 
 
                 <div class="menu-perfil">
-                    <a href=""><img src="../img/cart.svg" alt=""></a>
+                    <span class="cart-icon" onclick="toggleModal()"><img src="../img/cart.svg" alt=""></span>
                     <a href=""><img src="../img/user.svg" alt=""></a>
                 </div>
             </div>
         </div>
 
-
-
     </header>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////MODAL DEL CARRITO///////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <div class="modal" id="cartModal">
+        <div class="modal-header">
+            <h2>Carrito de Compras</h2>
+            <span class="close" onclick="toggleModal()">×</span>
+        </div>
+        <div id="cartItems">
+            <!-- Los productos se agregarán aquí dinámicamente -->
+        </div>
+        <div class="modal-footer">
+            <div class="total-price" id="totalPrice"><b>Total:</b> S/0.00</div>
+            <button onclick="checkout()">Pagar</button>
+        </div>
+    </div>
+
+
+
 
     <section class="hero-gt">
         <div class="hero-gt-ctn">
             <div class="hero-gt-title">
-                <h1>El Arte de las Seis <span class="hero-mod">Cuerdas</span></h1>
-                <h2>Melodia / <span class="hero-mod"> Ritmo </span> / Sonido</h2>
-                <p>"Descubre el sonido que define tu estilo. Desde las cálidas vibraciones de una guitarra clásica hasta la potencia de una eléctrica, cada instrumento cuenta una historia. Elige tu compañera musical y deja que la inspiración fluya."</p>
+                <h1>El Arte de las Seis <span class="hero-modd">Cuerdas</span></h1>
+                <h2>Melodia / <span class="hero-modd"> Ritmo </span> / Sonido</h2>
+                <p>"Descubre el sonido que define tu estilo. Desde las cálidas vibraciones de una guitarra clásica hasta
+                    la potencia de una eléctrica, cada instrumento cuenta una historia. Elige tu compañera musical y
+                    deja que la inspiración fluya."</p>
             </div>
 
             <div class="hero-gt-img">
-                <img src="https://media.istockphoto.com/id/1190645702/es/foto/mano-de-hombre-tocando-guitarra-ac%C3%BAstica.jpg?s=612x612&w=0&k=20&c=xsGCqf0j9bzDM1yAXqxSGcUwLJCFz17UYofqCrTigqg=" alt="">
+                <img src="https://media.istockphoto.com/id/1190645702/es/foto/mano-de-hombre-tocando-guitarra-ac%C3%BAstica.jpg?s=612x612&w=0&k=20&c=xsGCqf0j9bzDM1yAXqxSGcUwLJCFz17UYofqCrTigqg="
+                    alt="">
             </div>
-           
+
         </div>
     </section>
 
@@ -100,49 +126,84 @@
             </div>
 
             <div class="gtr-cards">
-                <div class="gtr-card">
-                    <img src="https://audiomusica.vtexassets.com/arquivos/ids/162755-800-auto?v=638645288339700000&width=800&height=auto&aspect=true" alt="" class="producto-img"" alt="">
-                    <h3>VIZCAYA</h3>
-                    <h2>Guitarra acústica Vizcaya 4/4 con cutaway FC-39CN</h2>
-                    <p>S/239.00</p>
-                    <a href="">Agregar</a>
+                <div class="gtr-card" data-id="1" onclick="addToCart(this)">
+                    <div class="gtr-card-img">
+                        <img src="https://audiomusica.vtexassets.com/arquivos/ids/162755-800-auto?v=638645288339700000&width=800&height=auto&aspect=true"
+                            alt="" class="producto-img"" alt="">
+                    </div>
+                    <div class=" gtr-card-info">
+                        <h3>VIZCAYA</h3>
+                        <h2>Guitarra acústica Vizcaya 4/4 con cutaway FC-39CN</h2>
+                        <p>S/239.00</p>
+                        <button>Agregar</button>
+                    </div>
                 </div>
-                <div class="gtr-card">
-                    <img src="https://audiomusica.vtexassets.com/arquivos/ids/161562-800-auto?v=638506919242130000&width=800&height=auto&aspect=true" alt="" class="producto-img">
-                    <h3>VIZCAYA</h3>
-                    <h2>Guitarra electroacústica Vizcaya FC-39CE 4/4</h2>
-                    <p>S/269.00</p>
-                    <a href="">Agregar</a>
+
+                <div class=" gtr-card" data-id="2" onclick="addToCart(this)">
+                    <div class="gtr-card-img">
+                        <img src="https://audiomusica.vtexassets.com/arquivos/ids/161562-800-auto?v=638506919242130000&width=800&height=auto&aspect=true"
+                            alt="" class="producto-img">
+                    </div>
+                    <div class=" gtr-card-info">
+                        <h3>VIZCAYA</h3>
+                        <h2>Guitarra electroacústica Vizcaya FC-39CE 4/4</h2>
+                        <p>S/269.00</p>
+                        <button>Agregar</button>
+                    </div>
                 </div>
-                <div class="gtr-card">
-                    <img src="https://audiomusica.vtexassets.com/arquivos/ids/162777-800-auto?v=638648567836730000&width=800&height=auto&aspect=true" alt="" class="producto-img">
-                    <h3>IBANEZ</h3>
-                    <h2>Guitarra acústica Ibanez GA3  OAM Open Pore Ambar</h2>
-                    <p>S/569.00</p>
-                    <a href="">Agregar</a>
+
+                <div class="gtr-card" data-id="3" onclick="addToCart(this)">
+                    <div class="gtr-card-img">
+                        <img src="https://audiomusica.vtexassets.com/arquivos/ids/162777-800-auto?v=638648567836730000&width=800&height=auto&aspect=true"
+                            alt="" class="producto-img">
+                    </div>
+                    <div class=" gtr-card-info">
+                        <h3>IBANEZ</h3>
+                        <h2>Guitarra acústica Ibanez GA3 OAM Open Pore Ambar</h2>
+                        <p>S/569.00</p>
+                        <button>Agregar</button>
+                    </div>
                 </div>
-                <div class="gtr-card">
-                    <img src="https://audiomusica.vtexassets.com/arquivos/ids/163024-800-auto?v=638665994698070000&width=800&height=auto&aspect=true" alt="" class="producto-img">
-                    <h3>VIZCAYA</h3>
-                    <h2>Guitarra eléctrica Vizcaya FREG1003 WRD/WR</h2>
-                    <p>S/499.00</p>
-                    <a href="">Agregar</a>
+
+                <div class="gtr-card" data-id="4" onclick="addToCart(this)">
+                    <div class="gtr-card-img">
+                        <img src="https://audiomusica.vtexassets.com/arquivos/ids/163024-800-auto?v=638665994698070000&width=800&height=auto&aspect=true"
+                            alt="" class="producto-img">
+                    </div>
+                    <div class=" gtr-card-info">
+                        <h3>VIZCAYA</h3>
+                        <h2>Guitarra eléctrica Vizcaya FREG1003 WRD/WR</h2>
+                        <p>S/499.00</p>
+                        <button>Agregar</button>
+                    </div>
                 </div>
-                <div class="gtr-card">
-                    <img src="https://audiomusica.vtexassets.com/arquivos/ids/162224-800-auto?v=638596751022230000&width=800&height=auto&aspect=true" alt="" class="producto-img">
-                    <h3>GLAMBERRY</h3>
-                    <h2>Guitarra eléctrica Glamberry Strat MTG HSS</h2>
-                    <p>S/699.00</p>
-                    <a href="">Agregar</a>
+
+                <div class="gtr-card" data-id="5" onclick="addToCart(this)">
+                    <div class="gtr-card-img">
+                        <img src="https://audiomusica.vtexassets.com/arquivos/ids/162224-800-auto?v=638596751022230000&width=800&height=auto&aspect=true"
+                            alt="" class="producto-img">
+                    </div>
+                    <div class=" gtr-card-info">
+                        <h3>GLAMBERRY</h3>
+                        <h2>Guitarra eléctrica Glamberry Strat MTG HSS</h2>
+                        <p>S/699.00</p>
+                        <button>Agregar</button>
+                    </div>
                 </div>
-                <div class="gtr-card">
-                    <img src="https://audiomusica.vtexassets.com/arquivos/ids/156839-800-auto?v=637789469821400000&width=800&height=auto&aspect=true" alt="" class="producto-img">
-                    <h3>IBANEZ</h3>
-                    <h2>Guitarra Eléctrica Ibanez GRX40 MLB</h2>
-                    <p>S/949.00</p>
-                    <a href="">Agregar</a>
+
+                <div class="gtr-card" data-id="6" onclick="addToCart(this)">
+                    <div class="gtr-card-img">
+                        <img src="https://audiomusica.vtexassets.com/arquivos/ids/156839-800-auto?v=637789469821400000&width=800&height=auto&aspect=true"
+                            alt="" class="producto-img">
+                    </div>
+                    <div class=" gtr-card-info">
+                        <h3>IBANEZ</h3>
+                        <h2>Guitarra Eléctrica Ibanez GRX40 MLB</h2>
+                        <p>S/949.00</p>
+                        <button>Agregar</button>
+                    </div>
                 </div>
-                                
+
             </div>
         </div>
     </section>
@@ -157,7 +218,7 @@
                 <p class="ft-inf-title">Menu</p>
                 <a href="mision-vision.html">Nosotros</a>
                 <a href="">Misión y Visión</a>
-                <a href="">Compromiso</a>                   <!--falta indicar-->
+                <a href="">Compromiso</a> <!--falta indicar-->
                 <a href="">Ubicacion</a>
                 <a href="">Productos</a>
             </div>
@@ -172,7 +233,7 @@
                         <img class="redes-icon" src="../img/wsp.svg" alt="">
                         <a class="a-redes" href="">Whatsapp</a>
                     </div>
-                    
+
                     <div class="face">
                         <img class="redes-icon" src="../img/facebook.svg" alt="">
                         <a class="a-redes" href="">Facebook</a>
@@ -204,10 +265,11 @@
             </div>
 
         </div>
-    </footer> 
+    </footer>
 
-
-    <script src="../js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="../js/animaciones.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
 
 </html>
