@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Pago</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <h1>Resumen de Pedido</h1>
+    <div id="userDetails"></div>
+    <h2>Detalles del Carrito</h2>
+    <div id="cartDetails"></div>
+
+    <script>
+        // Obtener los datos del cliente y del carrito desde localStorage
+        const clientData = JSON.parse(localStorage.getItem('finalData')) || {};
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Mostrar detalles del cliente
+        const userDetails = document.getElementById('userDetails');
+        if (clientData.name && clientData.email && clientData.phone) {
+            userDetails.innerHTML = `
+                <h2>Detalles del Cliente</h2>
+                <p><strong>Nombre:</strong> ${clientData.name}</p>
+                <p><strong>Email:</strong> ${clientData.email}</p>
+                <p><strong>Teléfono:</strong> ${clientData.phone}</p>
+                <p><strong>Método de pago:</strong> ${clientData.paymentMethod || 'No seleccionado'}</p>
+                <p><strong>Tipo de entrega:</strong> ${clientData.deliveryType || 'No seleccionado'}</p>
+            `;
+        } else {
+            userDetails.innerHTML = '<p>No se encontraron detalles del cliente.</p>';
+        }
+
+        // Mostrar detalles del carrito
+        const cartDetails = document.getElementById('cartDetails');
+        if (cart.length > 0) {
+            cart.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.classList.add('cart-item');
+                itemDiv.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}" style="width: 100px; height: auto;">
+                    <div>
+                        <h3>${item.name}</h3>
+                        <p>Precio: S/${item.price.toFixed(2)}</p>
+                        <p>Cantidad: ${item.quantity}</p>
+                        <p>Total por producto: S/${(item.price * item.quantity).toFixed(2)}</p>
+                    </div>
+                `;
+                cartDetails.appendChild(itemDiv);
+            });
+
+            // Mostrar el total del carrito
+            const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const totalPriceDiv = document.createElement('div');
+            totalPriceDiv.innerHTML = `<h3>Total: S/${totalPrice.toFixed(2)}</h3>`;
+            cartDetails.appendChild(totalPriceDiv);
+        } else {
+            cartDetails.innerHTML = '<p>No hay artículos en el carrito.</p>';
+        }
+    </script>
+</body>
+
+</html>

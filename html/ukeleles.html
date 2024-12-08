@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukeleles</title>
+    <link rel="stylesheet" href="../css/menu-footer.css">
+    <link rel="stylesheet" href="../css/guitarras.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+
+</head>
+
+<body>
+    <header class="menu">
+
+        <div class="menu-sup">
+            <div class="menu-sup-ctn">
+                <div class="menu-items">
+                    <a href="https://www.facebook.com/colmemusic?locale=es_LA"><img src="../img/facebook.svg"
+                            alt=""></a>
+                    <a href="https://www.instagram.com/colmenares_instrumentos/"><img src="../img/instagram.svg"
+                            alt=""></a>
+                    <a href="https://www.tiktok.com/@colmenarescix?_t=8rjL0mUXrvz&_r=1"><img src="../img/tiktok.svg"
+                            alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCBYloQzyO20TZfttyNlC_Lg"><img src="../img/youtube.svg"
+                            alt=""></a>
+                </div>
+                <div class="menu-telf">
+                    <img src="../img/phone.svg" alt="">
+                    <a href="tel:+51979224000">979 224 000</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-inf">
+
+            <div class="menu-inf-ctn">
+
+                <div class="menu-logo">
+                    <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+                </div>
+
+                <div class="menu-links">
+                    <ul class="menu-dp">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li class="dropdown">
+                            <a href="#nosotros">Nosotros <span class="dropdown-icon">▼</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="mision-vision.html">Misión y Visión</a></li>
+                                <li><a href="#ubicacion">Ubicación</a></li> <!--FALTAAA-->
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#categorias" class="selected">Categorías <span
+                                    class="dropdown-icon selected">▼</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="guitarras.html" class="selected">Guitarras</a></li>
+                                <!--CAMBIAR SELECCION-->
+                                <li><a href="ukeleles.html">Ukeleles</a></li>
+                                <li><a href="violines.html">Violines</a></li>
+                                <li><a href="teclados.html">Teclados</a></li>
+                                <li><a href="baterias.html">Baterias</a></li>
+                                <li><a href="accesorios.html">Accesorios</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#footer">Contacto</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="menu-perfil">
+                    <span class="cart-icon" onclick="toggleModal()"><img src="../img/cart.svg" alt=""></span>
+                    <a href=""><img src="../img/user.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////MODAL DEL CARRITO///////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <div class="modal" id="cartModal">
+        <div class="modal-header">
+            <h2>Carrito de Compras</h2>
+            <span class="close" onclick="toggleModal()">×</span>
+        </div>
+        <div id="cartItems">
+            <!-- Los productos se agregarán aquí dinámicamente -->
+        </div>
+        <div class="modal-footer">
+            <div class="total-price" id="totalPrice"><b>Total:</b> S/0.00</div>
+            <button onclick="checkout()">Pagar</button>
+        </div>
+    </div>
+
+
+
+
+    <section class="hero-gt">
+        <div class="hero-gt-ctn">
+            <div class="hero-gt-title">
+                <h1>El Arte de las Cuatro <span class="hero-modd">Cuerdas</span></h1>
+                <h2>Melodia / <span class="hero-modd"> Ritmo </span> / Sonido</h2>
+                <p>"Pequeño en tamaño, pero gigante en alma. El ukelele evoca sonidos cálidos y alegres que te
+                    transportan a playas soleadas y momentos felices. Con su vibración única y su tono suave, es el
+                    compañero ideal para quienes buscan melodías frescas."</p>
+            </div>
+
+            <div class="hero-gt-img">
+                <img src="https://media.istockphoto.com/id/1190645702/es/foto/mano-de-hombre-tocando-guitarra-ac%C3%BAstica.jpg?s=612x612&w=0&k=20&c=xsGCqf0j9bzDM1yAXqxSGcUwLJCFz17UYofqCrTigqg="
+                    alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="guitarras">
+        <div class="guitarras-ctn">
+
+            <div class="gtr-title">
+                <h1>Ukeleles</h1>
+            </div>
+
+            <div class="gtr-cards">
+                <div class="gtr-card" data-id="7" onclick="addToCart(this)">
+                    <div class="gtr-card-img">
+                        <img src="https://casamusicalstrauss.com.pe/cdn/shop/files/UKELELE-FREEMAN-AZUL.png?v=1699899415&width=1200"
+                            alt="" class="producto-img"" alt="">
+                    </div>
+                    <div class=" gtr-card-info">
+                        <h3>FREEMAN</h3>
+                        <h2>Ukelele Soprano Azul Freeman - UK201-DB</h2>
+                        <p>S/149.00</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class=" gtr-card" data-id="8" onclick="addToCart(this)">
+                    <div class="gtr-card-img">
+                        <img src="https://casamusicalstrauss.com.pe/cdn/shop/products/pn012pn012.png?v=1655164335&width=1200"
+                            alt="" class="producto-img">
+                    </div>
+                    <div class=" gtr-card-info">
+                        <h3>UKBOY</h3>
+                        <h2>Ukelele concierto Ukboy - PN12 - dark blue</h2>
+                        <p>S/249.00</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="gtr-card" data-id="9" onclick="addToCart(this)">
+                    <div class="gtr-card-img">
+                        <img src="https://casamusicalstrauss.com.pe/cdn/shop/products/estesi.png?v=1614118813&width=1200"
+                            alt="" class="producto-img">
+                    </div>
+                    <div class=" gtr-card-info">
+                        <h3>MAULOA</h3>
+                        <h2>Ukelele concierto Mauloa - UKC- 2312</h2>
+                        <p>S/255.00</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="gtr-card" data-id="10" onclick="addToCart(this)">
+                    <div class="gtr-card-img">
+                        <img src="https://audiomusica.vtexassets.com/arquivos/ids/155516-800-auto?v=637691707515000000&width=800&height=auto&aspect=true"
+                            alt="" class="producto-img">
+                    </div>
+                    <div class=" gtr-card-info">
+                        <h3>IBANEZ</h3>
+                        <h2>Ukelele acústico Ibanez UKC10 color open pore (OP)</h2>
+                        <p>S/359.00</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="gtr-card" data-id="11" onclick="addToCart(this)">
+                    <div class="gtr-card-img">
+                        <img src="https://audiomusica.vtexassets.com/arquivos/ids/156350-800-auto?v=637752946973630000&width=800&height=auto&aspect=true"
+                            alt="" class="producto-img">
+                    </div>
+                    <div class=" gtr-card-info">
+                        <h3>IBANEZ</h3>
+                        <h2>Ukelele Concierto E/A Ibanez UEW15E OPN</h2>
+                        <p>S/699.00</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+                <div class="gtr-card" data-id="12" onclick="addToCart(this)">
+                    <div class="gtr-card-img">
+                        <img src="https://audiomusica.vtexassets.com/arquivos/ids/157327-800-auto?v=637872200194300000&width=800&height=auto&aspect=true"
+                            alt="" class="producto-img">
+                    </div>
+                    <div class=" gtr-card-info">
+                        <h3>IBANEZ</h3>
+                        <h2>Ukelele Concierto Ibanez UICT10 - Negro</h2>
+                        <p>S/679.00</p>
+                        <button>Agregar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <div id="footer" class="footer-ctn">
+            <div class="ft-logo">
+                <img src="../img/logonar.png" alt="">
+            </div>
+            <div class="ft-info">
+                <p class="ft-inf-title">Menu</p>
+                <a href="mision-vision.html">Nosotros</a>
+                <a href="">Misión y Visión</a>
+                <a href="">Compromiso</a> <!--falta indicar-->
+                <a href="">Ubicacion</a>
+                <a href="">Productos</a>
+            </div>
+
+            <div class="ft-redes">
+
+                <p class="ft-title">Redes</p>
+
+                <div class="redes-items">
+
+                    <div class="face">
+                        <img class="redes-icon" src="../img/wsp.svg" alt="">
+                        <a class="a-redes" href="">Whatsapp</a>
+                    </div>
+
+                    <div class="face">
+                        <img class="redes-icon" src="../img/facebook.svg" alt="">
+                        <a class="a-redes" href="">Facebook</a>
+                    </div>
+
+                    <div class="insta">
+                        <img class="redes-icon" src="../img/instagram.svg" alt="">
+                        <a class="a-redes" href="">Instagram</a>
+                    </div>
+                    <div class="ttk">
+                        <img class="redes-icon" src="../img/tiktok.svg" alt="">
+                        <a class="a-redes" href="">TikTok</a>
+                    </div>
+                    <div class="yout">
+                        <img class="redes-icon" src="../img/youtube.svg" alt="">
+                        <a class="a-redes" href="">Youtube</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="ft-book">
+                <p class="ft-title">Libro de Reclamaciones</p>
+                <a href=""> <img src="../img/libro.svg" alt=""></a>
+                <p class="copy">
+                    &copy; 2024 Colmenares. Todos los <br>derechos reservados.
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../js/carrito.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="../js/animaciones.js"></script>
+</body>
+
+</html>
