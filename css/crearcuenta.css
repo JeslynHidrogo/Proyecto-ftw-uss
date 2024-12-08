@@ -1,0 +1,68 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 10px 50px; /* Espaciado para el menú fijo */
+    min-height: 60vh; /* Asegura que ocupe el espacio central */
+    background-color: var(--second-color); /* Fondo que puedes personalizar */
+}
+
+.form-group {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.form-group h2 {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.form-group button:hover {
+    background-color: #e55a1c;
+}
+
+#mensaje {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+.form-group .register-link {
+    margin-top: 15px;
+}
+
+.form-group .register-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
