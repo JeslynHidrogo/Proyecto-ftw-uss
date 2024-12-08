@@ -56,29 +56,28 @@ En todas las páginas del proyecto se ha implementado un carrito de compras, ubi
 
 6. **Compra**:
    - Se ha incluido tres formularios, uno debajo del otro, con validaciones. Todos los datos se almacenan y se muestran en la página de resumen.
-
+     
+7. **Enlaces**:
+   - Ahora las cartas del Index ya funcionan como enlaces.
 ---
 
 ## Terminados
 
 - **Index**: Terminado.
 - **Guitarras**: Terminado.
+- **Prouctos en general**: terminado.
 - **Misión y Visión**: Terminado.
-
-**Nota:** Se ha detectado que si el modal del carrito está abierto y se hace clic fuera de él, no se cierra, solo se cierra desde la `X`.
 
 ---
 
 ## Por Terminar
 
 - **Responsive en todas las páginas**.
-- **Todas las páginas de productos, excepto Guitarras**.
-- **Página de Contacto**.
-- **Linkeo del menú y footer**.
-- **Página de pago**: Terminado solo hasta el detalle del carrito.
+- ~~**Todas las páginas de productos, excepto Guitarras**.~~
+- ~~**Página de Contacto**.~~
+- ~~**Linkeo del menú y footer**.~~
+- ~~**Página de pago**: Terminado solo hasta el detalle del carrito.~~
 - **Página de resumen de compra**.
-
-**Nota:** En la página de inicio, las cartas de productos ya funcionan como enlaces.
 
 ---
 
