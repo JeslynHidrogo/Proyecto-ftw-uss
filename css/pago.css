@@ -16,7 +16,7 @@
 
 .cart-summary {
     /*Contenedor principal de productos*/
-    width: 48%;
+    width: 58%;
     margin-right: 4%;
     height: 100%;
     overflow: auto;
@@ -166,7 +166,7 @@ se alterara el flujo y el orden de los contenedores*/
 /*Contenedor de control para los formularios*/
 .form-container-ctn {
     margin-top: 55px;
-    width: 85%;
+    width: 100%;
     height: 95%;
     display: flex;
     flex-direction: column;
@@ -241,7 +241,7 @@ input {
 .option {
     display: flex;
     align-items: center;
-    padding: 10px 15px;
+    padding: 8px 12px;
     background-color: white;
     border-radius: 10px;
     cursor: pointer;
@@ -258,7 +258,7 @@ input {
 /*las imagenes de los metodos*/
 .method img,
 .option img {
-    width: 30px;
+    width: 25px;
     margin-right: 10px;
 }
 
@@ -312,7 +312,7 @@ button:hover {
 
 #paymentDetails img {
     /*imagen de los qr*/
-    width: 200px;
+    width: 170px;
     height: auto;
     border: 2px solid #bdbdbd;
     background-color: white;
