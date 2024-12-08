@@ -1,0 +1,366 @@
+/*////////////////////////////////////////////////////////*/
+/*/////////////////////Contenedores Iniciales/////////////*/
+/*////////////////////////////////////////////////////////*/
+.productos-total {
+    width: 100%;
+    margin: 15vh 0;
+    height: calc(100vh - 15vh);
+}
+
+.productos-t-ctn {
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    height: 100%;
+}
+
+.cart-summary {
+    /*Contenedor principal de productos*/
+    width: 48%;
+    margin-right: 4%;
+    height: 100%;
+    overflow: auto;
+    padding: 20px 0;
+}
+
+.cart-item {
+    /* contenedor de los articulos. de cada uno */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 25px 30px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.cart-item img {
+    max-width: 80px;
+    margin-right: 10px;
+    height: auto;
+}
+
+.cart-item-details {
+    /*Contenedor de Nombre y precio*/
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.cart-item-details h3 {
+    /*Para el nombre*/
+    margin: 0 10px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+}
+
+.cart-item-details p {
+    /*Para el Precio*/
+    margin: 0 0 10px 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item-details .label {
+    /*Para el titulo osea la palabra Precio*/
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+/* Contenedor de Controles de cantidad */
+.cart-item-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-label {
+    /*Titulo del contenedor*/
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.quantity-controls {
+    /*Segundo contenedor de controles*/
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-controls button {
+    /*control eliminar*/
+    background-color: #fe5611;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.quantity-controls button {
+    /*Controles + y -*/
+    background-color: #fe5611;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+
+
+.quantity-controls button:hover,
+.cart-item-controls button:hover {
+    /*Hover de Controles*/
+    background-color: #c62908;
+}
+
+.quantity-controls .value {
+    /*el valor en medio de los controles*/
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 30px;
+}
+
+.total-price {
+    /*Contenedor de titulo y precio*/
+    margin-top: 25px;
+}
+
+/* Estilo del "Total a Pagar" */
+.total-label {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.total-value {
+    /*estilo del precio total*/
+    font-weight: 500;
+}
+
+
+/*///////////////////////////////////////////*/
+/* //////////////////formularios///////////*/
+/*//////////////////////////////////////////*/
+
+
+/*No modificar nada de no ser necesario*/
+/*No modificar nada que tenga la ropiedad display flex ya que 
+se alterara el flujo y el orden de los contenedores*/
+
+/*Contenedor principal de los formularios*/
+.form-container {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+/*Contenedor de control para los formularios*/
+.form-container-ctn {
+    margin-top: 55px;
+    width: 85%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formu {
+    /*contenedor de los formularios*/
+    width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ececec;
+}
+
+
+.formu-title {
+    /*titulo de los formularios*/
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.formu-title img {
+    /*Imagen del titulo*/
+    width: 25px;
+    margin-right: 15px;
+}
+
+.formu-title h2 {
+    /*Texto del Titulo*/
+    font-size: 18px;
+}
+
+#clientForm {
+    /*Contenedor de los imput del formulario*/
+    padding: 15px 0;
+    margin-top: 15px;
+}
+
+label {
+    /*el titulo encima de los imput*/
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+input {
+    /*donde se inserta los datos*/
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+
+
+/*//////////////////////////////////////////////////////////*/
+/*//////Para el form de metodos de pago y entrega/////////////////*/
+/*//////////////////////////////////////////////////////////*/
+.payment-methods,
+.delivery-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/*los recuadros de yape, plin, tarjeta*/
+.method,
+.option {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    justify-content: space-between;
+}
+
+/*efecto de zoom*/
+.method:hover,
+.option:hover {
+    transform: scale(0.8);
+}
+
+/*las imagenes de los metodos*/
+.method img,
+.option img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/*los titulos*/
+.method h2,
+.option h2 {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/*contenedores de los qr el form de tarjeta y metodos de envio*/
+#paymentDetails,
+#deliveryDetails {
+    margin-top: 20px;
+}
+
+/*Contenedor de los botones atras siguiente*/
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/*estilo de botones de los formularios*/
+.form-container button {
+    padding: 10px 20px;
+    margin: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fe5611;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c62908;
+}
+
+
+#paymentDetails p {
+    /*estilos de los titulos antes de los qr*/
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#paymentDetails img {
+    /*imagen de los qr*/
+    width: 200px;
+    height: auto;
+    border: 2px solid #bdbdbd;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/*estilos del imput de tarjeta*/
+.card-info {
+    margin-bottom: 10px;
+}
+
+.card-info .card-number {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.card-details {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.card-details .expiry-date,
+.card-details .cvv {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.card-details .expiry-date {
+    margin-right: 10px;
+}
+
+
+#deliveryDetails p {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
