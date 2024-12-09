@@ -37,7 +37,7 @@ En todas las páginas del proyecto se ha implementado un carrito de compras, ubi
    - En la sección de datos de usuario y productos, el botón de regresar presenta una mala transición, por lo que se ha solucionado de manera temporal haciendo que se recargue la página para mostrar el primer `div`.
 
 7. **Error tipográfico en el botón de generar PDF**:
-   - En el botón de generar PDF al final de la página, hay un error de tipografía que no se muestra correctamente como una línea. *No afecta en nada al final*.
+   - En el botón de generar PDF, en el pdf al final de la página, hay un error de tipografía que no se muestra correctamente  una línea del precio del producto pero. *No afecta en nada al final*.
 
 ---
 
