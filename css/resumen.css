@@ -23,14 +23,7 @@
     justify-content: center;
 }
 
-/* .compras-ctn {
-    max-width: 85%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
+
 
 .compras-animation {
     display: flex;
@@ -44,7 +37,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 .compras-content h1 {
@@ -70,6 +63,7 @@
     display: flex;
     justify-content: center;
     gap: 35px;
+    margin-top: 35px;
 }
 
 

@@ -33,6 +33,12 @@ En todas las páginas del proyecto se ha implementado un carrito de compras, ubi
 5. **Estética inconsistente**:
    - Algunos elementos mantienen una estética no acorde con el resto del proyecto debido a conflictos con las propiedades de CSS. Si funciona correctamente, se recomienda dejarlo como está.
 
+6. **Problema de transición al regresar**:
+   - En la sección de datos de usuario y productos, el botón de regresar presenta una mala transición, por lo que se ha solucionado de manera temporal haciendo que se recargue la página para mostrar el primer `div`.
+
+7. **Error tipográfico en el botón de generar PDF**:
+   - En el botón de generar PDF al final de la página, hay un error de tipografía que no se muestra correctamente como una línea. *No afecta en nada al final*.
+
 ---
 
 ## Funcionalidades
@@ -56,27 +62,35 @@ En todas las páginas del proyecto se ha implementado un carrito de compras, ubi
 
 6. **Compra**:
    - Se ha incluido tres formularios, uno debajo del otro, con validaciones. Todos los datos se almacenan y se muestran en la página de resumen.
-     
+
 7. **Enlaces**:
    - Ahora las cartas del Index ya funcionan como enlaces.
+
+8. **Botón de descarga de boleta**:
+   - Se ha agregado un botón de descarga de boleta en la página de resumen de compra.
+
+9. **Página final de resumen de compra y despedida**:
+   - Se ha añadido una página final de resumen de compra y una página de despedida.
+
 ---
 
 ## Terminados
 
 - **Index**: Terminado.
 - **Guitarras**: Terminado.
-- **Prouctos en general**: terminado.
+- **Productos en general**: Terminado.
 - **Misión y Visión**: Terminado.
+- **Revisión de todas las páginas**: Se han terminado de revisar todas las páginas menos la de inicio de sesión y registro, por actualizar todo.
 
 ---
 
 ## Por Terminar
 
 - **Responsive en todas las páginas**.
-- ~~**Todas las páginas de productos, excepto Guitarras**.~~
-- ~~**Página de Contacto**.~~
-- ~~**Linkeo del menú y footer**.~~
-- ~~**Página de pago**: Terminado solo hasta el detalle del carrito.~~
+- ~~**Todas las páginas de productos, excepto Guitarras**~~.
+- ~~**Página de Contacto**~~.
+- ~~**Linkeo del menú y footer**~~.
+- ~~**Página de pago**: Terminado solo hasta el detalle del carrito~~.
 - **Página de resumen de compra**.
 
 ---
@@ -84,4 +98,6 @@ En todas las páginas del proyecto se ha implementado un carrito de compras, ubi
 ## Advertencias
 
 - **Propiedad `display: flex`**: Por favor, no modifiques nada que tenga la propiedad `display: flex`, ya que es fundamental para la estructura y diseño de muchas partes de la página. Cualquier cambio podría causar problemas de visualización o funcionalidad.
-- **Estética inconsistente**: Algunos elementos pueden no tener la misma estética que otros debido a conflictos con las propiedades de CSS. Si algo está funcionando correctamente, es mejor dejarlo como está para evitar romper el diseño.
+- **No deslinkear los JS**: No se debe deslinkear los archivos de JavaScript.
+- **No modificar la primera parte de `resumen.js`**: Si deseas eliminar la funcionalidad de descarga de PDF, solo elimina la segunda parte señalada.
+- **No modificar los archivos de JS**: No modifiques los archivos de JavaScript.
