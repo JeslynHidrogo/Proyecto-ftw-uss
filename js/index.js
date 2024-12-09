@@ -19,4 +19,17 @@ const swiper = new Swiper('.swiper', {
 });
 
 
+// Selecciona todos los divs con la clase "card-hover"
+const cardHovers = document.querySelectorAll('.card-hover');
+
+// Agrega un event listener a cada div
+cardHovers.forEach(card => {
+    card.addEventListener('click', () => {
+        const link = card.querySelector('a'); // Encuentra el enlace dentro del div
+        if (link) {
+            window.location.href = link.href; // Redirige al enlace
+        }
+    });
+});
+
 
