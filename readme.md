@@ -10,7 +10,9 @@ En todas las páginas del proyecto se ha implementado un carrito de compras, ubi
 - **CSS**: Los estilos se encuentran en el archivo `carrito.css`.
 - **JavaScript**: La funcionalidad está implementada en el archivo `carrito.js`.
 
+:::note
 **Nota importante:** No modifiques el código del carrito a menos que sea estrictamente necesario.
+:::
 
 ---
 
@@ -37,7 +39,7 @@ En todas las páginas del proyecto se ha implementado un carrito de compras, ubi
    - En la sección de datos de usuario y productos, el botón de regresar presenta una mala transición, por lo que se ha solucionado de manera temporal haciendo que se recargue la página para mostrar el primer `div`.
 
 7. **Error tipográfico en el botón de generar PDF**:
-   - En el botón de generar PDF, en el pdf al final de la página, hay un error de tipografía que no se muestra correctamente  una línea del precio del producto pero. *No afecta en nada al final*.
+   - En el botón de generar PDF, en el PDF al final de la página, hay un error de tipografía que no se muestra correctamente una línea del precio del producto, pero *no afecta en nada al final*.
 
 ---
 
@@ -61,7 +63,7 @@ En todas las páginas del proyecto se ha implementado un carrito de compras, ubi
    - Se han incluido animaciones en la página de misión y visión. Si deseas eliminarlas, solo elimina el archivo `animaciones.js`.
 
 6. **Compra**:
-   - Se ha incluido tres formularios, uno debajo del otro, con validaciones. Todos los datos se almacenan y se muestran en la página de resumen.
+   - Se han incluido tres formularios, uno debajo del otro, con validaciones. Todos los datos se almacenan y se muestran en la página de resumen.
 
 7. **Enlaces**:
    - Ahora las cartas del Index ya funcionan como enlaces.
@@ -97,7 +99,9 @@ En todas las páginas del proyecto se ha implementado un carrito de compras, ubi
 
 ## Advertencias
 
+:::warning
 - **Propiedad `display: flex`**: Por favor, no modifiques nada que tenga la propiedad `display: flex`, ya que es fundamental para la estructura y diseño de muchas partes de la página. Cualquier cambio podría causar problemas de visualización o funcionalidad.
 - **No deslinkear los JS**: No se debe deslinkear los archivos de JavaScript.
 - **No modificar la primera parte de `resumen.js`**: Si deseas eliminar la funcionalidad de descarga de PDF, solo elimina la segunda parte señalada.
 - **No modificar los archivos de JS**: No modifiques los archivos de JavaScript.
+:::
