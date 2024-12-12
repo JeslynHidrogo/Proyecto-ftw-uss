@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* los estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+/* el de los contenedores*/
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.form-container::before,
+.form-containerr::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/Fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4) saturate(0.5);
+    z-index: -1;
+}
+
+/* la parte del loguito con el texto */
+.logo {
+    width: 350px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 0 5px 5px 0;
+}
+
+.logo-img {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.logo-img img {
+    width: 50%;
+}
+
+.logo p {
+    width: 86%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.logo h3 {
+    width: 90%;
+    margin: auto;
+    color: #fe5611;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 35px;
+    font-size: 18px;
+}
+
+.link {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.link a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+/* la seccion del logueo*/
+.login-box {
+    border-radius: 0px 5px 5px 0;
+    padding: 40px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 320px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #fe5611;
+}
+
+.input-field {
+    position: relative;
+    border-bottom: 2px solid #fff5ed;
+    margin: 15px 0;
+}
+
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #ffa971;
+    font-size: 0.8rem;
+    pointer-events: none;
+    transition: 0.15s ease;
+}
+
+.input-field input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff5ed;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+}
+
+.login-box a {
+    color: #efefef;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background: #fe5611;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 15px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    color: #fff;
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* la seccion del logueate con redes */
+.login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.login p {
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.login-redes {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.redes {
+    border: 1px solid white;
+    margin: 0 10px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+}
+
+/* contenedor en reversa para el registro*/
+.form-containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: row-reverse;
+}

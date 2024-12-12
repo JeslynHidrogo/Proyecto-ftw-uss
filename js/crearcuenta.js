@@ -1,35 +1,53 @@
-document.getElementById('formCrearCuenta').addEventListener('submit', function (e) {
-    e.preventDefault(); // Evita el envío del formulario
 
-    // Obtener los valores de los campos
-    const nombres = document.getElementById('nombres').value.trim();
-    const apellidos = document.getElementById('apellidos').value.trim();
-    const dni = document.getElementById('dni').value.trim();
-    const gmail = document.getElementById('gmail').value.trim();
-    const telefono = document.getElementById('telefono').value.trim();
-    const usuario = document.getElementById('usuario').value.trim();
-    const contrasena = document.getElementById('contrasena').value.trim();
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    const usernameInput = form.querySelector("input[type='text']");
+    const emailInput = form.querySelector("input[type='email']");
+    const passwordInput = form.querySelector("input[type='password']");
+    const errorContainer = document.createElement("div");
 
-    // Verificar si todos los campos están llenos
-    if (!nombres || !apellidos || !dni || !gmail || !telefono || !usuario || !contrasena) {
-        alert("Todos los campos deben estar llenos.");
-        return;
-    }
+    errorContainer.style.color = "red";
+    errorContainer.style.marginTop = "10px";
+    form.appendChild(errorContainer);
 
-    // Verificar formato de DNI y teléfono
-    const dniPattern = /^\d{8}$/;
-    const telefonoPattern = /^\d{9}$/;
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Evita el envío del formulario si hay errores.
+        errorContainer.innerHTML = ""; // Limpia mensajes previos.
 
-    if (!dniPattern.test(dni)) {
-        alert("El DNI debe ser de 8 dígitos.");
-        return;
-    }
+        let errors = [];
 
-    if (!telefonoPattern.test(telefono)) {
-        alert("El teléfono debe ser de 9 dígitos.");
-        return;
-    }
+        // Validar usuario.
+        const username = usernameInput.value.trim();
+        if (!username) {
+            errors.push("El nombre de usuario es obligatorio.");
+        }
 
-    // Si todo está correcto, mostrar el mensaje
-    document.getElementById('mensaje').textContent = 'Cuenta creada exitosamente.';
+        // Validar email.
+        const email = emailInput.value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email) {
+            errors.push("El correo electrónico es obligatorio.");
+        } else if (!emailRegex.test(email)) {
+            errors.push("Por favor, ingresa un correo electrónico válido.");
+        }
+
+        // Validar contraseña.
+        const password = passwordInput.value.trim();
+        if (!password) {
+            errors.push("La contraseña es obligatoria.");
+        } else if (password.length < 6) {
+            errors.push("La contraseña debe tener al menos 6 caracteres.");
+        }
+
+        // Mostrar errores o redirigir.
+        if (errors.length > 0) {
+            errorContainer.innerHTML = errors.map(error => `<p>${error}</p>`).join("");
+        } else {
+            errorContainer.innerHTML = "<p style='color: green;'>Registro exitoso. Redirigiendo...</p>";
+            setTimeout(() => {
+                window.location.href = "./login.html"; // Redirige al archivo login.html
+            }, 4000); // Espera 4 segundos antes de redirigir.
+        }
+    });
 });
+

@@ -73,9 +73,24 @@ function changeQuantity(productId, change) {
 }
 
 function checkout() {
+    // Guardar el carrito en localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
-    window.location.href = '../html/pago.html';
 
+    // Obtener la ubicación actual del archivo
+    const currentPath = window.location.pathname;
+
+    // Construir la ruta hacia pago.html dependiendo de dónde estamos
+    let targetPath;
+    if (currentPath.endsWith('index.html')) {
+        // Si estamos en el index.html en la raíz
+        targetPath = './html/pago.html';
+    } else {
+        // Si estamos en un archivo dentro de /html/
+        targetPath = '../html/pago.html';
+    }
+
+    // Redirigir a la página de pago
+    window.location.href = targetPath;
 }
 
 

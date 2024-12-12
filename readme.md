@@ -19,7 +19,7 @@ En todas las páginas del proyecto se ha implementado un carrito de compras, ubi
 ## Errores Conocidos
 
 1. **Cierre del carrito**:
-   - Actualmente, el carrito solo se puede cerrar usando el ícono de cierre (`X`). No se cierra al hacer clic en cualquier parte de la pantalla.
+   - Actualmente, el carrito solo se puede cerrar usando el ícono de cierre (`X`). No se cierra al hacer clic en cualquier parte de la pantalla. Sin Solucion encontrada
 
 2. **Límite de ítems**:
    - El carrito no tiene un límite de ítems, lo que podría sobrecargar visualmente la página.
@@ -27,20 +27,22 @@ En todas las páginas del proyecto se ha implementado un carrito de compras, ubi
    - Los precios de los productos se suman automáticamente para mantener la interacción dinámica.
 
 3. **Página de pago**:
-   - Desde la página de pago, el carrito no se puede abrir debido a conflictos con clases iguales en el CSS.
+   - Desde la página de pago, el carrito no se puede abrir debido a conflictos con clases iguales en el CSS. Sin Solucion encontrada
 
 4. **Tarjetas de Productos**:
-   - ~~En el índice, las tarjetas de los productos solo funcionan como enlaces si se hace clic en el enlace al hacer hover.~~
+   - ~~En el índice, las tarjetas de los productos solo funcionan como enlaces si se hace clic en el enlace al hacer hover.~~ CORREJIDO actualizado en el js
 
 5. **Estética inconsistente**:
-   - Algunos elementos mantienen una estética no acorde con el resto del proyecto debido a conflictos con las propiedades de CSS. Si funciona correctamente, se recomienda dejarlo como está.
+   - Algunos elementos mantienen una estética no acorde con el resto del proyecto debido a conflictos con las propiedades de CSS. Si funciona correctamente, se recomienda dejarlo como está. Sin Solucion encontrada
 
 6. **Problema de transición al regresar**:
-   - En la sección de datos de usuario y productos, el botón de regresar presenta una mala transición, por lo que se ha solucionado de manera temporal haciendo que se recargue la página para mostrar el primer `div`.
+   - En la sección de datos de usuario y productos, el botón de regresar presenta una mala transición, por lo que se ha solucionado de manera temporal haciendo que se recargue la página para mostrar el primer `div`. Sin Solucion encontrada
 
 7. **Error tipográfico en el botón de generar PDF**:
-   - En el botón de generar PDF, en el PDF al final de la página, hay un error de tipografía que no se muestra correctamente una línea del precio del producto, pero *no afecta en nada al final*.
+   - En el botón de generar PDF, en el PDF al final de la página, hay un error de tipografía que no se muestra correctamente una línea del precio del producto, pero *no afecta en nada al final*. Sin Solucion encontrada
 
+8. **En el inicio no se puede ir a pagar**:
+   - ~~En la pagina de inicio no se funciona el boton de pagar debido a las diferentes rutas que se manejan~~. CORREJIDO actualizado en el js
 ---
 
 ## Funcionalidades
@@ -74,6 +76,8 @@ En todas las páginas del proyecto se ha implementado un carrito de compras, ubi
 9. **Página final de resumen de compra y despedida**:
    - Se ha añadido una página final de resumen de compra y una página de despedida.
 
+10. **Login y registro**:
+   - Se ha terminado de implementar el login y el registro con sus respectivas validaciones, redirecciones y estilos globales.
 ---
 
 ## Terminados
@@ -82,7 +86,7 @@ En todas las páginas del proyecto se ha implementado un carrito de compras, ubi
 - **Guitarras**: Terminado.
 - **Productos en general**: Terminado.
 - **Misión y Visión**: Terminado.
-- **Revisión de todas las páginas**: Se han terminado de revisar todas las páginas menos la de inicio de sesión y registro, por actualizar todo.
+- **Revisión de todas las páginas**: Se han terminado de revisar todas las páginas ~~menos la de inicio de sesión y registro, por actualizar todo~~.
 
 ---
 
@@ -93,7 +97,7 @@ En todas las páginas del proyecto se ha implementado un carrito de compras, ubi
 - ~~**Página de Contacto**~~.
 - ~~**Linkeo del menú y footer**~~.
 - ~~**Página de pago**: Terminado solo hasta el detalle del carrito~~.
-- **Página de resumen de compra**.
+- ~~**Página de resumen de compra**.~~
 
 ---
 
