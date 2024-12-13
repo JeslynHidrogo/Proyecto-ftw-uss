@@ -137,7 +137,66 @@
         /*para que la imagen se recorte y se vea mejor*/
     }
 
-    footer {
-        display: none;
+
+    /*////////////////////////////////////*/
+    .informacion {
+        padding: 3rem 1rem;
+        cursor: pointer;
+    }
+
+    .container {
+        max-width: 99%;
+        margin: 0 auto;
+    }
+
+    .icon {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+    }
+
+    /*//////////////////////////////*/
+    .productos-ctn {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .products-cards {
+        justify-content: center;
+    }
+
+    .footer-ctn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ft-logo img {
+        width: 150px;
+        /* Reducir tamaño del logo */
+    }
+
+    .ft-info,
+    .ft-redes,
+    .ft-book {
+        margin-top: 20px;
+    }
+
+    .ft-info a {
+        font-size: 14px;
+        /* Ajustar el tamaño de la fuente de los enlaces */
+    }
+
+    .ft-title,
+    .ft-inf-title {
+        font-size: 16px;
+    }
+
+    .redes-icon {
+        width: 16px;
+        /* Iconos de redes sociales más pequeños */
+    }
+
+    .copy {
+        font-size: 0.8rem;
     }
 }

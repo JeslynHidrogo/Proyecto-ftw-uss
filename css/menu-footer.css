@@ -223,11 +223,10 @@ body {
 /* //////////////////////FOOTER///////////////////////// */
 /* ///////////////////////////////////////////////////// */
 
-
 footer {
     width: 100%;
     background-color: black;
-    height: 40vh;
+    padding: 4vh 0;
     border-top: 4px solid #FF712A;
 }
 
@@ -236,6 +235,8 @@ footer {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    /* Permitir que los elementos se apilen en pantallas pequeñas */
 }
 
 .ft-logo,
@@ -243,17 +244,18 @@ footer {
 .ft-book,
 .ft-redes {
     margin-top: 35px;
+    /* Las secciones ocupan el 100% del ancho cuando se apilan */
 }
 
 .ft-logo img {
     width: 200px;
 }
 
-
 /*//////////ft-info///////////////*/
 .ft-info {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .ft-inf-title,
@@ -278,9 +280,7 @@ footer {
     flex-direction: column;
     display: flex;
     align-items: flex-start;
-
 }
-
 
 .face,
 .insta,
