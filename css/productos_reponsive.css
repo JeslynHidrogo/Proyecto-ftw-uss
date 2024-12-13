@@ -1,0 +1,57 @@
+@media (max-width: 768px) {
+
+    .hero-gt {
+        margin: 95px 0;
+        height: auto;
+    }
+
+    .hero-gt-ctn {
+        flex-direction: column;
+    }
+
+
+    .hero-gt-title h1,
+    .hero-gt-title h2,
+    .hero-gt-title p {
+        text-align: center;
+    }
+
+    .hero-gt-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-gt-title h2 {
+        font-size: 14px;
+    }
+
+    .hero-gt-title p {
+        font-size: 15px;
+
+    }
+
+    .gtr-title h1 {
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        padding: 0 10px;
+        color: #ff712a;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .gtr-title h1::before,
+    .gtr-title h1::after {
+        content: none;
+    }
+
+    .hero-gt-title p {
+
+        width: 100%;
+    }
+
+    .gtr-cards {
+
+        justify-content: center;
+
+    }
+}
