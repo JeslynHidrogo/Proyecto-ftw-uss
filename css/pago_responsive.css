@@ -1,0 +1,121 @@
+@media (max-width: 768px) {
+    .productos-t-ctn {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cart-summary {
+        height: auto;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .cart-item {
+        /* Ajustar los márgenes y padding */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 10px;
+    }
+
+    .cart-item img {
+        /* Reducir el tamaño de las imágenes */
+        max-width: 60px;
+        margin: 0 0 10px;
+    }
+
+    .cart-item-details {
+        /* Alinear texto dentro del contenedor */
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .cart-item-details h3,
+    .cart-item-details p {
+        /* Ajustar el tamaño de texto y márgenes */
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .cart-item-controls {
+        /* Reducir el espacio entre controles */
+        gap: 5px;
+    }
+
+    .quantity-controls .value {
+        /* Ajustar el tamaño del valor de cantidad */
+        font-size: 16px;
+        min-width: 25px;
+    }
+
+    .form-container {
+        /* Ajustar la alineación del formulario */
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .form-container-ctn {
+        /* Ajustar las proporciones del contenedor */
+        margin-top: 30px;
+        height: auto;
+        width: 100%;
+        padding: 0 10px;
+        /* Espaciado interno */
+    }
+
+    .formu {
+        /* Ajustar el ancho del formulario */
+        width: 100%;
+        padding: 15px;
+    }
+
+    .payment-methods,
+    .delivery-options {
+        /* Cambiar la disposición para pantallas pequeñas */
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .method,
+    .option {
+        /* Ajustar el tamaño y espaciado de los métodos */
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .method img,
+    .option img {
+        /* Ajustar el tamaño de las imágenes */
+        width: 20px;
+    }
+
+    .buttons {
+        /* Centrar los botones en pantallas pequeñas */
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-container button {
+        /* Ajustar el tamaño de los botones */
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    #paymentDetails img {
+        /* Reducir el tamaño de las imágenes de los QR */
+        width: 120px;
+    }
+
+    .card-details {
+        /* Cambiar disposición a columna */
+        flex-direction: column;
+    }
+
+    .card-details .expiry-date,
+    .card-details .cvv {
+        /* Ajustar el ancho */
+        width: 100%;
+        margin-right: 0;
+    }
+}

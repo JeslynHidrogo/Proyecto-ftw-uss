@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Compra</title>
     <link rel="stylesheet" href="../css/pago.css">
-    <link rel="stylesheet" href="../css/nav-footer-responsive.css">
     <link rel="stylesheet" href="../css/menu-footer.css">
+    <link rel="stylesheet" href="../css/nav-footer-responsive.css">
+    <link rel="stylesheet" href="./css/carrito.css">
+    <link rel="stylesheet" href="../css/pago_responsive.css">
+
+
+
 </head>
 
 <body>
@@ -41,6 +46,12 @@
                     <span></span>
                     <span></span>
                 </div>
+                <script>
+                    function toggleMenu() {
+                        const menu = document.querySelector('.menu-dp');
+                        menu.classList.toggle('active');
+                    }
+                </script>
                 <div class="menu-logo">
                     <a href="../index.html"><img src="../img/logo.png" alt=""></a>
                 </div>
@@ -94,7 +105,6 @@
 
             <div class="form-container">
                 <div class="form-container-ctn">
-                    <!-- Paso 1: Datos del cliente -->
                     <div class="formu" id="step1">
 
                         <div class="formu-title">
@@ -114,7 +124,6 @@
                         </form>
                     </div>
 
-                    <!-- Paso 2: Método de pago -->
                     <div class="formu" id="step2" style="display: none;">
                         <div class="formu-title">
                             <img src="../img/payment.svg" alt="">
@@ -141,7 +150,6 @@
                         </div>
                     </div>
 
-                    <!-- Paso 3: Tipo de entrega -->
                     <div class="formu" id="step3" style="display: none;">
                         <div class="formu-title">
                             <img src="../img/envio.svg" alt="">
@@ -181,9 +189,9 @@
                 <p class="ft-inf-title">Menu</p>
                 <a href="mision-vision.html">Nosotros</a>
                 <a href="">Misión y Visión</a>
-                <a href="">Compromiso</a> <!--falta indicar-->
-                <a href="">Ubicacion</a>
-                <a href="">Productos</a>
+                <a href="">Compromiso</a>
+                < <a href="">Ubicacion</a>
+                    <a href="">Productos</a>
             </div>
 
             <div class="ft-redes">

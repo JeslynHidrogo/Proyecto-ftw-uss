@@ -12,12 +12,12 @@
     margin: auto;
     display: flex;
     height: 100%;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .cart-summary {
-    /*Contenedor principal de productos*/
-    width: 58%;
-    margin-right: 4%;
+    flex: 1.3;
     height: 100%;
     overflow: auto;
     padding: 20px 0;
@@ -156,7 +156,7 @@ se alterara el flujo y el orden de los contenedores*/
 
 /*Contenedor principal de los formularios*/
 .form-container {
-    width: 48%;
+    flex: 1;
     height: 100%;
     display: flex;
     justify-content: end;
