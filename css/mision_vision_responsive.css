@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+
+    .nosotros {
+        margin: 100px 0;
+        width: 100%;
+    }
+
+    .nst-img {
+        width: 100%;
+    }
+
+
+    .nst-p {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .nst-p p {
+        color: #3d4349;
+        width: 85%;
+        margin: auto;
+        line-height: 28px;
+    }
+
+    .contenido2 h3 {
+        text-align: center;
+    }
+
+}

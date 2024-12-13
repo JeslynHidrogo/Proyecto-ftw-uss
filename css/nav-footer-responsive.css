@@ -1,0 +1,151 @@
+/* Para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+
+
+    /*Ocultamos el Menu Superior*/
+    .menu-sup {
+        display: none;
+    }
+
+    /*Aumentamos el tamaño del menu inferior y le damos
+    una pocicion relativa para poder pocicionar los elementos
+    internos*/
+    .menu-inf {
+        height: 68px;
+        position: relative;
+    }
+
+    /*aumentamos el ancho del segundo contenedor
+    para que los elementos no esten muy pegados a la pantalla*/
+    .menu-inf-ctn {
+        max-width: 98%;
+    }
+
+    /*Colocamos el menu perfil en posicion absoluta para pocicionar
+    los iconos en el medio top 0 para que este centro en el eje y 
+    y left 40 para centrar en el eje x*/
+    .menu-perfil {
+        position: absolute;
+        left: 45%;
+        top: 0%;
+    }
+
+    /*Menu dp donde estan los links tambien en absolute y los links en
+    columna originalmente ocultos con top y left lo pocicionamos al centro 
+    y al 100% de ancho*/
+    .menu-dp {
+        background-color: rgb(218, 218, 218);
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        padding: 20px 0;
+        border-radius: 0 0 15px 15px;
+        border-bottom: 1px solid rgb(139, 139, 139);
+    }
+
+    /*que el menu ya aparezca extendido*/
+    .dropdown-menu {
+        display: block;
+        position: relative;
+    }
+
+    .menu-dp.active {
+        display: flex;
+    }
+
+    .menu-dp>li>a {
+        padding: 2px 15px;
+
+    }
+
+    .dropdown-menu {
+        border-radius: 0px;
+        border: 1px solid #ffffff;
+        box-shadow: none;
+        margin: 5px 10px;
+        border-radius: 5px;
+        padding-left: 15px;
+    }
+
+    /*menu hamburguesa e icono,*/
+
+    .menu-hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        position: absolute;
+        z-index: 100;
+        right: 5%;
+    }
+
+    .menu-hamburger span {
+        background-color: #000;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+    }
+
+    .menu-hamburger {
+        display: flex;
+    }
+
+    .dropdown-icon {
+        display: none;
+    }
+
+    /**/
+    .modal {
+        top: 68px;
+        left: 0;
+        width: 100%;
+        height: 450px;
+        background-color: rgb(247, 247, 247);
+        box-shadow: none;
+        border-radius: 0 0 15px 15px;
+        border-bottom: 1px solid rgb(139, 139, 139);
+    }
+
+    /*//////////////////////////////////////////////////*/
+    /*//////////////////////////////////////////////////*/
+    /*/////////////Fin del Menu Responsivo//////////////*/
+    /*//////////////////////////////////////////////////*/
+    /*//////////////////////////////////////////////////*/
+
+    .footer-ctn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ft-logo img {
+        width: 150px;
+    }
+
+    .ft-info,
+    .ft-redes,
+    .ft-book {
+        margin-top: 20px;
+    }
+
+    .ft-info a {
+        font-size: 14px;
+        /* Ajustar el tamaño de la fuente de los enlaces */
+    }
+
+    .ft-title,
+    .ft-inf-title {
+        font-size: 16px;
+    }
+
+    .redes-icon {
+        width: 16px;
+        /* Iconos de redes sociales más pequeños */
+    }
+
+    .copy {
+        font-size: 0.8rem;
+    }
+}
