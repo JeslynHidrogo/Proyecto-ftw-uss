@@ -64,7 +64,8 @@
         border-radius: 0px;
         border: 1px solid #ffffff;
         box-shadow: none;
-        margin: 5px 0;
+        margin: 5px 10px;
+        border-radius: 5px;
         padding-left: 15px;
     }
 
