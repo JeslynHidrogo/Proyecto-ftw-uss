@@ -1,38 +1,50 @@
 /* Para pantallas más pequeñas (móviles) */
 @media (max-width: 768px) {
 
+
+    /*Ocultamos el Menu Superior*/
     .menu-sup {
         display: none;
     }
 
+    /*Aumentamos el tamaño del menu inferior y le damos
+    una pocicion relativa para poder pocicionar los elementos
+    internos*/
     .menu-inf {
         height: 60px;
         position: relative;
     }
 
+    /*aumentamos el ancho del segundo contenedor
+    para que los elementos no esten muy pegados a la pantalla*/
     .menu-inf-ctn {
-        justify-content: start;
         max-width: 98%;
     }
 
+    /*Colocamos el menu perfil en posicion absoluta para pocicionar
+    los iconos en el medio top 0 para que este centro en el eje y 
+    y left 40 para centrar en el eje x*/
     .menu-perfil {
         position: absolute;
         left: 40%;
         top: 0%;
     }
 
-
+    /*Menu dp donde estan los links tambien en absolute y los links en
+    columna originalmente ocultos con top y left lo pocicionamos al centro 
+    y al 100% de ancho*/
     .menu-dp {
+        background-color: rgb(218, 218, 218);
         display: none;
         flex-direction: column;
-        background-color: rgb(223, 223, 223);
         position: absolute;
-        top: 80%;
+        top: 100%;
         width: 100%;
         left: 0;
-
+        padding: 20px 0;
     }
 
+    /*que el menu ya aparezca extendido*/
     .dropdown-menu {
         display: block;
         position: relative;
@@ -41,6 +53,8 @@
     .menu-dp.active {
         display: flex;
     }
+
+    /*menu hamburguesa e icono,*/
 
     .menu-hamburger {
         display: none;
@@ -63,8 +77,16 @@
         display: flex;
     }
 
+    .dropdown-icon {
+        display: none;
+    }
 
 
+    /*//////////////////////////////////////////////////*/
+    /*//////////////////////////////////////////////////*/
+    /*/////////////Fin del Menu Responsivo//////////////*/
+    /*//////////////////////////////////////////////////*/
+    /*//////////////////////////////////////////////////*/
     footer {
         display: none;
     }
