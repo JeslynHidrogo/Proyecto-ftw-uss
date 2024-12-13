@@ -98,3 +98,9 @@ function checkout() {
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
 }
+
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu-dp');
+    menu.classList.toggle('active');
+}
