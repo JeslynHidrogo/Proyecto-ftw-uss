@@ -119,7 +119,23 @@
         margin-top: 68px;
     }
 
+    .galeria-ctn {
+        height: 30vh;
+    }
 
+    .swiper {
+        height: 100%;
+        width: 100%;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        /* object-fit: fill; */
+        /*Para que ocupe el 100% pero ajustando al contenedor*/
+        object-fit: cover;
+        /*para que la imagen se recorte y se vea mejor*/
+    }
 
     footer {
         display: none;
