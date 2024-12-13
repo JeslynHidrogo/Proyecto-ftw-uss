@@ -43,6 +43,7 @@
         left: 0;
         padding: 20px 0;
         border-radius: 0 0 15px 15px;
+        border-bottom: 1px solid rgb(139, 139, 139);
     }
 
     /*que el menu ya aparezca extendido*/
@@ -102,6 +103,11 @@
     /*/////////////Fin del Menu Responsivo//////////////*/
     /*//////////////////////////////////////////////////*/
     /*//////////////////////////////////////////////////*/
+
+
+
+
+
     footer {
         display: none;
     }
