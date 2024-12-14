@@ -48,7 +48,7 @@
 > [!TIP]  
 > Para cualquier pregunta, recuerden: **FLEXBOX LO HACE AUTOMÁTICAMENTE** 👤
 
-> /*Código by https://github.com/ZxeroZ*/
+> /*Código by https://github.com/ZxeroZ/*
 
 
 
