@@ -14,7 +14,8 @@
 
 > [!WARNING]  
 > Probar añadiendo cosas al carrito demasiadas veces puede hacer que deje de funcionar debido a problemas con el **localStorage**.  
-> **[!TIP]**  
+
+> [!TIP]
 > Esto se soluciona ejecutando en una ventana de incógnito.
 
 > [!CAUTION]  
