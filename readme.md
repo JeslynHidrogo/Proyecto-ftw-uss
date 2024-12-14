@@ -17,10 +17,10 @@
 > **[!TIP]**  
 > Esto se soluciona ejecutando en una ventana de incógnito.
 
-> [!ERROR]  
+> [!CAUTION]  
 > Error conocido: el carrito no se cierra al hacer clic fuera de él. **Uso recomendado:** Utiliza el botón "X" para cerrarlo. No hay solución disponible por el momento.
 
-> [!ERROR]  
+> [!CAUTION]  
 > Error conocido: en el PDF generado no se crean correctamente los márgenes, por lo que cierta información puede aparecer recortada. **Sin solución por el momento.**
 
 > [!CAUTION]  
