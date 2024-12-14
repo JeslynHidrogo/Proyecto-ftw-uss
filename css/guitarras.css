@@ -97,32 +97,25 @@ body {
 
 .gtr-title {
     width: 100%;
-    height: 50px;
+    padding: 15px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5vh 0;
+    border-bottom: 1px solid #ff712a;
 }
 
 .gtr-title h1 {
     display: inline-block;
     position: relative;
     margin: 0;
-    padding: 0 10px;
+    padding: 10px 10px;
     color: #ff712a;
     font-size: 2.2rem;
     font-weight: 600;
 }
 
-.gtr-title h1::before,
-.gtr-title h1::after {
-    content: '';
-    display: inline-block;
-    width: 390px;
-    height: 1px;
-    background-color: #ff712a;
-    vertical-align: middle;
-}
+
 
 .gtr-title h1::before {
     margin-right: 20px;

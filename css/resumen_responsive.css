@@ -1,0 +1,100 @@
+@media (max-width: 768px) {
+
+    .resumen-ctn {
+        max-width: 85%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .resumen-compra {
+        overflow: scroll;
+        height: auto;
+        margin-top: 68px;
+    }
+
+    .compras-content h1 {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .c-first {
+        margin: 20px 0;
+        width: 90%;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .c-second {
+        width: 90%;
+        font-weight: 300;
+        font-size: 10px;
+    }
+
+    .compras,
+    .resumen {
+        height: auto;
+    }
+
+    .c-mod {
+        display: none;
+    }
+    
+    /* truck upper body */
+    .truckBody {
+        width: 120px;
+    }
+    .truckTires {
+        width: 120px;
+    }
+
+    .c-enlaces {
+        margin: 10px 0 30px 0;
+    }
+    
+    .c-buttom {
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        padding: 5px 25px;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+    }
+    .resumen-ctn {
+        margin: 15px auto;
+    }
+
+
+    #regresar{
+        display: none;
+    }
+    #mainContainer {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .cart-item {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cart-item div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .cart-item img {
+        margin-right: 0;
+    }
+
+    #cartDetails h3 {
+        text-align: center;
+
+    }
+
+    #userDetails button{
+        margin: 19px 0 0 25%;
+    }
+}

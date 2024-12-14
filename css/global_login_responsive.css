@@ -1,0 +1,34 @@
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .logo {
+        width: 320px;
+        height: auto;
+        padding: 15px 0;
+        border-radius: 10px;
+    }
+
+    .logo-img,
+    .logo p {
+        display: none;
+    }
+
+    .logo h3 {
+        margin-top: 0;
+
+    }
+
+    .login-box {
+        border-radius: 10px;
+    }
+
+
+    .form-containerr {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+}

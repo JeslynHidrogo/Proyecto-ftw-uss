@@ -41,6 +41,7 @@
     .cart-item-details h3,
     .cart-item-details p {
         /* Ajustar el tamaño de texto y márgenes */
+        width: 100%;
         font-size: 14px;
         margin: 5px 0;
     }

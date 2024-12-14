@@ -8,17 +8,18 @@
 .compras,
 .resumen {
     width: 100%;
-    height: calc(100vh - 85px);
-    margin-top: 85px;
+    height: 100%;
 }
 
 
 
-.resumen-ctn {
+
+.compras-ctn {
     max-width: 85%;
     height: 100%;
     margin: auto;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
 }
@@ -298,6 +299,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 
@@ -314,7 +316,7 @@
 
 #cartDetails h3 {
     text-align: start;
-    margin: 0 20px;
+    margin: 0 10px;
     font-weight: 600;
     font-size: 15px;
 }
