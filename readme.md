@@ -1,111 +1,228 @@
-# Carrito de Compras
-
-En todas las páginas del proyecto se ha implementado un carrito de compras, ubicado justo después del encabezado (`header`). A continuación, se describen los detalles de su estructura, errores conocidos y funcionalidades.
+## Login Y registro
+Las páginas de **Login** y **Register** comparten la misma estructura base en HTML y CSS. Ambas están diseñadas con `flexbox` para alinear y centrar los elementos de manera responsiva. La principal diferencia entre ambas radica en la posición de los elementos, que se controla mediante las propiedades `flex-direction` y `justify-content`.
 
 ---
+
+## Login
+
+### Estructura
+La página de **Login** está compuesta por dos secciones principales dentro de un contenedor flexible:
+1. **Div izquierdo:**
+   - Contiene el logo, un mensaje de bienvenida y un enlace que redirige a la página de registro.
+2. **Div derecho:**
+   - Incluye el formulario de inicio de sesión, con campos para el correo electrónico, la contraseña y un botón de envío.
+
+### Estilos
+- Se utiliza `flexbox` para dividir la pantalla en dos columnas:
+  - **Columna izquierda:** Contiene información visual y textual.
+  - **Columna derecha:** Contiene el formulario.
+- El contenedor principal está configurado con:
+  - `display: flex;`
+  - `flex-direction: row;` (por defecto).
+  - `justify-content: space-between;` para distribuir los elementos.
+  - `align-items: center;` para centrar verticalmente.
+
+### Responsividad
+- En pantallas pequeñas, las dos secciones se apilan una debajo de la otra.
+- Para lograr esto, se utiliza:
+  - `flex-direction: column;` para que el enlace de registro quede debajo añadimos 'reverse' 
+  `flex-direction: column-reverse;` 
+  - Los elementos mantienen su alineación centrada.
+
+---
+
+## Register
+
+### Estructura
+La página de **Register** tiene la misma estructura que la de **Login**, pero con los elementos principales en posiciones inversas:
+1. **Div izquierdo:** Contiene el formulario de registro, con campos para nombre completo, correo electrónico, contraseña y un botón para registrarse.
+2. **Div derecho:** Contiene el logo, un mensaje de bienvenida y un enlace para redirigir a la página de inicio de sesión.
+
+### Estilos
+- La disposición de las columnas se invierte utilizando:
+  - `flex-direction: row-reverse;` en el contenedor principal.
+- Los elementos se mantienen alineados y distribuidos como en la página de Login.
+
+### Responsividad
+- Al igual que en el **Login**, en pantallas pequeñas los elementos se apilan verticalmente.
+- Para lograr esto, se utiliza:
+  - `flex-direction: column-reverse;` para mantener el formulario debajo del contenido informativo.
+
+---
+
+## Estilos compartidos
+Ambas páginas comparten una hoja de estilos base para mantener la consistencia:
+- El contenedor principal utiliza `flexbox` para el diseño y la alineación.
+- Las propiedades como colores, tipografía y espaciados están centralizadas en esta hoja de estilos 
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+## Index
+
+## Menú
+
+### Estructura
+El menú está dividido en dos secciones principales:
+1. **Menú superior:**
+   - Contiene los íconos de redes sociales.
+   - Este menú es opcional y se oculta en dispositivos móviles para evitar distracciones.
+2. **Menú principal:**
+   - Contiene:
+     - logos y enlaces
+
+### Estilos
+- El menú utiliza `flexbox` para alinear y distribuir los elementos horizontalmente.
+- **Menú superior:** Configurado con `display: none;` en pantallas pequeñas para ocultarlo.
+- **Menú principal:**
+  - El logo permanece centrado.
+  - Los enlaces de navegación se transforman en un menú hamburguesa, posicionado con `position: absolute`, `top` y `right`.
+  - El carrito y el login están posicionados en línea, entre el logo y el menú hamburguesa.
+
+### Responsividad
+- **Menú superior:** Se oculta con media queries.
+- **Menú principal:** En pantallas pequeñas:
+  - El logo permanece fijo en el centro.
+  - Los enlaces de navegación se colapsan en un menú hamburguesa (`display: none;` -> `display: block;` al activar).
+  - El carrito y el ícono de login se posicionan con `absolute` para mantenerse alineados.
+
+---
+
+## Slider
+
+### Estructura
+- Implementado con la librería **Swiper**, lo que facilita la creación de un carrusel de imágenes o contenido.
+- El slider ocupa el ancho completo de la página y es completamente responsivo. en slider.js puedes configurar sus funcionalidades, las cuales son proporcionadas por la libreria
+
+## Sección de Productos
+
+### Estructura
+La página incluye dos grupos de cartas de productos:
+1. **Grupo superior:** 4 cartas.
+2. **Grupo inferior:** 6 cartas.
+
+### Estilos
+- Cada grupo utiliza `flexbox` para:
+  - Alinear las cartas en filas.
+  - Configurar `flex: 1` para que las cartas ocupen el espacio proporcionalmente.
+  - Habilitar `flex-wrap` para que las cartas se acomoden automáticamente en nuevas filas si no caben en una sola.
+
+### Responsividad
+- En pantallas pequeñas, las cartas se organizan automáticamente en una sola columna o en filas reducidas gracias a las propiedades `flex-wrap` y `flex-basis`.
+
+---
+
+## Footer
+
+### Estructura
+El footer está diseñado en una sola fila que contiene varias secciones, como enlaces y datos de contacto.
+
+### Estilos
+- Utiliza `flexbox` para alinear los elementos en fila.
+- En dispositivos móviles, se cambia a disposición en columna con `flex-direction: column;`.
+
+---
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+## Misión y Visión
 
 ## Estructura
 
-- **HTML**: Después del `header`, encontrarás la estructura del modal del carrito.
-- **CSS**: Los estilos se encuentran en el archivo `carrito.css`.
-- **JavaScript**: La funcionalidad está implementada en el archivo `carrito.js`.
+- La página está dividida en secciones cada seccion dentro de un contenedor flex, primero se alinean en fila y para responsive en columna usando flex-wrap para que sea automatico
 
-:::note
-**Nota importante:** No modifiques el código del carrito a menos que sea estrictamente necesario.
-:::
-
----
-
-## Errores Conocidos
-
-1. **Cierre del carrito**:
-   - Actualmente, el carrito solo se puede cerrar usando el ícono de cierre (`X`). No se cierra al hacer clic en cualquier parte de la pantalla. Sin Solucion encontrada
-
-2. **Límite de ítems**:
-   - El carrito no tiene un límite de ítems, lo que podría sobrecargar visualmente la página.
-   - Para manejar esto, se implementó un `overflow: auto`, lo que permite mostrar un desplazable cuando el contenido supera el espacio del modal.
-   - Los precios de los productos se suman automáticamente para mantener la interacción dinámica.
-
-3. **Página de pago**:
-   - Desde la página de pago, el carrito no se puede abrir debido a conflictos con clases iguales en el CSS. Sin Solucion encontrada
-
-4. **Tarjetas de Productos**:
-   - ~~En el índice, las tarjetas de los productos solo funcionan como enlaces si se hace clic en el enlace al hacer hover.~~ CORREJIDO actualizado en el js
-
-5. **Estética inconsistente**:
-   - Algunos elementos mantienen una estética no acorde con el resto del proyecto debido a conflictos con las propiedades de CSS. Si funciona correctamente, se recomienda dejarlo como está. Sin Solucion encontrada
-
-6. **Problema de transición al regresar**:
-   - En la sección de datos de usuario y productos, el botón de regresar presenta una mala transición, por lo que se ha solucionado de manera temporal haciendo que se recargue la página para mostrar el primer `div`. Sin Solucion encontrada
-
-7. **Error tipográfico en el botón de generar PDF**:
-   - En el botón de generar PDF, en el PDF al final de la página, hay un error de tipografía que no se muestra correctamente una línea del precio del producto, pero *no afecta en nada al final*. Sin Solucion encontrada
-
-8. **En el inicio no se puede ir a pagar**:
-   - ~~En la pagina de inicio no se funciona el boton de pagar debido a las diferentes rutas que se manejan~~. CORREJIDO actualizado en el js
----
-
-## Funcionalidades
-
-1. **Acceso global al carrito**:
-   - El carrito puede ser agregado y visualizado desde cualquier parte de la página donde esté presente el menú.
-   - Se puede modificar la cantidad de ítems del carrito desde cualquier página donde esté presente el menú.
-
-2. **Gestión en la página de pago**:
-   - Es posible agregar y quitar productos directamente desde la página de pago.
-
-3. **Sumatoria de precios**:
-   - Los precios de los productos se suman automáticamente para facilitar la interacción.
-
-4. **Modularidad**:
-   - El código está modulado para minimizar errores relacionados con clases iguales.
-   - Para usar el carrito en cualquier página, solo necesitas copiar la estructura HTML y enlazar los archivos `carrito.css` y `carrito.js`.
-
-5. **Animaciones**:
-   - Se han incluido animaciones en la página de misión y visión. Si deseas eliminarlas, solo elimina el archivo `animaciones.js`.
-
-6. **Compra**:
-   - Se han incluido tres formularios, uno debajo del otro, con validaciones. Todos los datos se almacenan y se muestran en la página de resumen.
-
-7. **Enlaces**:
-   - Ahora las cartas del Index ya funcionan como enlaces.
-
-8. **Botón de descarga de boleta**:
-   - Se ha agregado un botón de descarga de boleta en la página de resumen de compra.
-
-9. **Página final de resumen de compra y despedida**:
-   - Se ha añadido una página final de resumen de compra y una página de despedida.
-
-10. **Login y registro**:
-   - Se ha terminado de implementar el login y el registro con sus respectivas validaciones, redirecciones y estilos globales.
----
-
-## Terminados
-
-- **Index**: Terminado.
-- **Guitarras**: Terminado.
-- **Productos en general**: Terminado.
-- **Misión y Visión**: Terminado.
-- **Revisión de todas las páginas**: Se han terminado de revisar todas las páginas ~~menos la de inicio de sesión y registro, por actualizar todo~~.
+### Estilos
+- Se utiliza `flexbox` para distribuir las secciones de manera horizontal en pantallas grandes.
+- Cada sección está contenida en un `div` que puede incluir un título, párrafo y lista de puntos (en el caso de la sección de valores).
+  
+### Responsividad
+- En pantallas pequeñas, el `flexbox` se adapta automáticamente para organizar las secciones en una columna vertical mediante `flex-direction: column;`.
+- Las propiedades `flex` y `flex-wrap` garantizan que los elementos dentro de cada sección se ajusten bien y mantengan una disposición clara.
 
 ---
 
-## Por Terminar
+## Estilos
 
-- **Responsive en todas las páginas**.
-- ~~**Todas las páginas de productos, excepto Guitarras**~~.
-- ~~**Página de Contacto**~~.
-- ~~**Linkeo del menú y footer**~~.
-- ~~**Página de pago**: Terminado solo hasta el detalle del carrito~~.
-- ~~**Página de resumen de compra**.~~
+Cada sección es un `flex container` y utiliza las siguientes propiedades:
+- `display: flex;` para aplicar el modelo de flexbox.
+- `flex-direction: row;` en pantallas grandes para alinear los elementos en una fila.
+- `flex-direction: column;` en pantallas pequeñas para que los elementos se apilen verticalmente.
+- `justify-content: space-between;` para distribuir el contenido de manera equitativa.
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+## Productos
+Cada página de producto contiene los siguientes elementos:
+1. **Contenedor principal** que organiza las cards de los productos usando `flexbox`.
+2. **Cards de productos:**
+   - los contenedores, osea las tarjetas de los productos
+3. **Modal del carrito:**
+   - Muestra los productos que el usuario ha agregado al carrito.
+   - Los productos se almacenan y recuperan desde el **localStorage**.
+
+### Estilos
+- Flex para todo, flex para alinear, gap: para margenes, flex:1 para que ocupen el mismo espacio, flex-wrap: wrap para responsive automatico
+
+### Responsividad
+- Las **cards de productos** se adaptan automáticamente a pantallas más pequeñas utilizando `flexbox`:
+  - En pantallas grandes, las cards se distribuyen en varias columnas.
+  - En pantallas pequeñas, las cards se apilan una debajo de la otra.
+- En pantallas móviles:
+  - Se utiliza `flex-direction: column;` en el contenedor principal de las cards para que se muestren en una sola columna.
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+## Pantalla de Pago
+La pantalla de pago está dividida en dos secciones principales:
+1. **Resumen del carrito**: En la parte izquierda, donde se muestra un resumen de los productos seleccionados, con sus nombres, cantidades y precios. 
+
+IMPORTANTE los productos del carrito se recuperan desde el localStorage
+
+2. **Formulario de pago**: En la parte derecha, donde el usuario puede ingresar los detalles de pago, como la información de la tarjeta y la dirección de facturación.
+
+Ambas secciones están organizadas utilizando **flexbox** para garantizar una disposición clara y responsiva.
 
 ---
 
-## Advertencias
+### Estilos
+- Se usa `display: flex;` en el contenedor principal para colocar las dos secciones lado a lado.
+- Cada sección (resumen y formulario) tiene un `flex: 1` para ocupar el mismo espacio disponible.
+- Los elementos dentro de cada sección se alinean usando `flexbox`:
+  - En la sección de resumen, los productos se enumeran de manera vertical.
+  - En la sección de formulario, los campos se organizan en filas.
 
-:::warning
-- **Propiedad `display: flex`**: Por favor, no modifiques nada que tenga la propiedad `display: flex`, ya que es fundamental para la estructura y diseño de muchas partes de la página. Cualquier cambio podría causar problemas de visualización o funcionalidad.
-- **No deslinkear los JS**: No se debe deslinkear los archivos de JavaScript.
-- **No modificar la primera parte de `resumen.js`**: Si deseas eliminar la funcionalidad de descarga de PDF, solo elimina la segunda parte señalada.
-- **No modificar los archivos de JS**: No modifiques los archivos de JavaScript.
-:::
+### Responsividad
+- En pantallas pequeñas, se cambia la disposición para que las dos secciones se apilen una encima de la otra usando `flex-direction: column;`.
+- Los campos del formulario se ajustan automáticamente a pantallas más pequeñas, y los elementos del resumen también se reordenan y redimensionan adecuadamente.
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+## Resumen de Pago
+La pantalla de resumen de pago consta de dos contenedores, cada uno con una altura del **100vh** para cubrir toda la pantalla. La primera pantalla muestra un mensaje de agradecimiento por la compra, con un botón para ver los detalles de la compra. Al hacer clic en el botón de "Detalles", el usuario es desplazado a la segunda pantalla, donde se muestran los detalles de la compra, los datos del usuario y el carrito. También incluye un botón para regresar a la primera pantalla y un botón para descargar el resumen de la compra en formato PDF.
+
+La estructura se organiza utilizando **flexbox** para asegurar que todos los elementos se ajusten correctamente en pantallas pequeñas y grandes.
+
+### Estilos
+- Se utilizan dos contenedores con `height: 100vh;` para asegurar que cada pantalla ocupe toda la altura de la ventana.
+- Los contenedores usan `overflow: hidden;` para evitar el desbordamiento de contenido.
+- **Flexbox** se emplea para alinear y centrar los elementos en ambas pantallas de manera flexible.
+- El contenido en la pantalla 1 se mantiene centrado, mientras que en la pantalla 2 los detalles se organizan en filas y columnas.
+
+### Responsividad
+- **Pantalla 1**: El mensaje y el botón se alinean en el centro de la pantalla utilizando `flexbox`.
+- **Pantalla 2**: Se usa `flexbox` para distribuir los detalles en columnas en pantallas grandes, y en filas en pantallas pequeñas.
+- El botón de "Ver Detalles" y el botón de "Regresar" se colocan en posiciones fijas, mientras que el contenido se adapta a la pantalla.
