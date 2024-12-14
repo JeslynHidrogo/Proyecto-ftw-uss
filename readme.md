@@ -1,7 +1,7 @@
-
+# IMPORTANTE LEER CUIDADOSAMENTE TODO A CONTNUACION
 # IMPORTANTE PARA CUALQUIER PREGUNTA SOLO RESPONDAN
-## FLEXBOX LO HACE AUTOMÁTICAMENTE** 👤
-### FLEXBOX ES MI PASTOR NADA ME FALTARA 
+## FLEXBOX LO HACE AUTOMÁTICAMENTE 👤
+## FLEXBOX ES MI PASTOR NADA ME FALTARA 
 > [!NOTE]  
 > El menú y el footer tienen su propia hoja de estilos, por lo que solo es necesario copiar la estructura HTML y linkear la hoja de CSS.
 
