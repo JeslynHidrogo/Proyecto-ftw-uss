@@ -1,3 +1,53 @@
+
+# IMPORTANTE
+> [!NOTE]  
+> El menú y el footer tienen su propia hoja de estilos, por lo que solo es necesario copiar la estructura HTML y linkear la hoja de CSS.
+
+> [!NOTE]  
+> El carrito de compras también tiene su CSS y JS separados, solo es necesario llamar los archivos y copiar su HTML. **Advertencia:** El carrito no es visible en ciertas páginas ya que en dichas páginas no es relevante.
+
+> [!IMPORTANT]  
+> Todo lo relacionado con el slider es gestionado por la librería **Swiper** y sus propiedades en `index.js`. Las propiedades son proporcionadas por la librería, no es necesario inventarlas.
+
+> [!WARNING]  
+> El carrito no tiene límite de ítems que puedes agregar, y para manejar la lista de ítems se usa un `overflow: scroll` para no sobrecargar la página.
+
+> [!WARNING]  
+> Probar añadiendo cosas al carrito demasiadas veces puede hacer que deje de funcionar debido a problemas con el **localStorage**.  
+> **[!TIP]**  
+> Esto se soluciona ejecutando en una ventana de incógnito.
+
+> [!ERROR]  
+> Error conocido: el carrito no se cierra al hacer clic fuera de él. **Uso recomendado:** Utiliza el botón "X" para cerrarlo. No hay solución disponible por el momento.
+
+> [!ERROR]  
+> Error conocido: en el PDF generado no se crean correctamente los márgenes, por lo que cierta información puede aparecer recortada. **Sin solución por el momento.**
+
+> [!CAUTION]  
+> En las últimas páginas de carrito, resumen de pago y pedido hay ciertos conflictos con el CSS. **NOTA:** Estos están arreglados parcialmente, **pero no modifiquen nada** de lo contrario podrían surgir conflictos con los demás CSS.
+
+> [!CAUTION]  
+> **Precaución general:** No modifiquen nada que tenga la propiedad **flex**, solo conseguirán romper el flujo de la página si no saben cómo funciona o a qué contenedor se está aplicando.
+
+> [!CAUTION]  
+> **Precaución general:** No deslinkeen un archivo JS. **Consecuencias:** El carrito, el menú responsivo y muchas otras funcionalidades de la página dejarán de funcionar.
+
+> [!IMPORTANT]  
+> Algunas páginas cuentan con animaciones gracias a la librería **GSAP**. Al igual que **Swiper**, la librería nos proporciona las propiedades que se gestionan dentro de `animaciones.js`.  
+> **[!TIP]**  
+> Si no desean incluir las animaciones, simplemente eliminen el archivo `animaciones.js`. Las animaciones dejarán de mostrarse sin afectar la funcionalidad de la página.
+
+> [!IMPORTANT]  
+> Si no desean la funcionalidad del PDF, pueden eliminarla desde `resumen.js`.  
+> **Muy importante:** Solo eliminen el código que está después de `// Generar el PDF////////////////////////////////////////////////*/`. Lo anterior es necesario para mostrar los datos del cliente.
+
+> [!TIP]  
+> Para cualquier pregunta, recuerden: **FLEXBOX LO HACE AUTOMÁTICAMENTE** 👤
+
+> /*Código by https://github.com/ZxeroZ*/
+
+
+
 ## Login Y registro
 Las páginas de **Login** y **Register** comparten la misma estructura base en HTML y CSS. Ambas están diseñadas con `flexbox` para alinear y centrar los elementos de manera responsiva. La principal diferencia entre ambas radica en la posición de los elementos, que se controla mediante las propiedades `flex-direction` y `justify-content`.
 
@@ -227,50 +277,3 @@ La estructura se organiza utilizando **flexbox** para asegurar que todos los ele
 - **Pantalla 2**: Se usa `flexbox` para distribuir los detalles en columnas en pantallas grandes, y en filas en pantallas pequeñas.
 - El botón de "Ver Detalles" y el botón de "Regresar" se colocan en posiciones fijas, mientras que el contenido se adapta a la pantalla.
 
-
-
-> [!NOTE]  
-> El menú y el footer tienen su propia hoja de estilos, por lo que solo es necesario copiar la estructura HTML y linkear la hoja de CSS.
-
-> [!NOTE]  
-> El carrito de compras también tiene su CSS y JS separados, solo es necesario llamar los archivos y copiar su HTML. **Advertencia:** El carrito no es visible en ciertas páginas ya que en dichas páginas no es relevante.
-
-> [!IMPORTANT]  
-> Todo lo relacionado con el slider es gestionado por la librería **Swiper** y sus propiedades en `index.js`. Las propiedades son proporcionadas por la librería, no es necesario inventarlas.
-
-> [!WARNING]  
-> El carrito no tiene límite de ítems que puedes agregar, y para manejar la lista de ítems se usa un `overflow: scroll` para no sobrecargar la página.
-
-> [!WARNING]  
-> Probar añadiendo cosas al carrito demasiadas veces puede hacer que deje de funcionar debido a problemas con el **localStorage**.  
-> **[!TIP]**  
-> Esto se soluciona ejecutando en una ventana de incógnito.
-
-> [!ERROR]  
-> Error conocido: el carrito no se cierra al hacer clic fuera de él. **Uso recomendado:** Utiliza el botón "X" para cerrarlo. No hay solución disponible por el momento.
-
-> [!ERROR]  
-> Error conocido: en el PDF generado no se crean correctamente los márgenes, por lo que cierta información puede aparecer recortada. **Sin solución por el momento.**
-
-> [!CAUTION]  
-> En las últimas páginas de carrito, resumen de pago y pedido hay ciertos conflictos con el CSS. **NOTA:** Estos están arreglados parcialmente, **pero no modifiquen nada** de lo contrario podrían surgir conflictos con los demás CSS.
-
-> [!CAUTION]  
-> **Precaución general:** No modifiquen nada que tenga la propiedad **flex**, solo conseguirán romper el flujo de la página si no saben cómo funciona o a qué contenedor se está aplicando.
-
-> [!CAUTION]  
-> **Precaución general:** No deslinkeen un archivo JS. **Consecuencias:** El carrito, el menú responsivo y muchas otras funcionalidades de la página dejarán de funcionar.
-
-> [!IMPORTANT]  
-> Algunas páginas cuentan con animaciones gracias a la librería **GSAP**. Al igual que **Swiper**, la librería nos proporciona las propiedades que se gestionan dentro de `animaciones.js`.  
-> **[!TIP]**  
-> Si no desean incluir las animaciones, simplemente eliminen el archivo `animaciones.js`. Las animaciones dejarán de mostrarse sin afectar la funcionalidad de la página.
-
-> [!IMPORTANT]  
-> Si no desean la funcionalidad del PDF, pueden eliminarla desde `resumen.js`.  
-> **Muy importante:** Solo eliminen el código que está después de `// Generar el PDF////////////////////////////////////////////////*/`. Lo anterior es necesario para mostrar los datos del cliente.
-
-> [!TIP]  
-> Para cualquier pregunta, recuerden: **FLEXBOX LO HACE AUTOMÁTICAMENTE** 👤
-
-> /*Código by https://github.com/ZxeroZ*/
