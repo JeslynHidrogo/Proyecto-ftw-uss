@@ -35,7 +35,7 @@
 
 > [!IMPORTANT]  
 > Algunas páginas cuentan con animaciones gracias a la librería **GSAP**. Al igual que **Swiper**, la librería nos proporciona las propiedades que se gestionan dentro de `animaciones.js`.  
-> **[!TIP]**  
+> [!TIP]
 > Si no desean incluir las animaciones, simplemente eliminen el archivo `animaciones.js`. Las animaciones dejarán de mostrarse sin afectar la funcionalidad de la página.
 
 > [!IMPORTANT]  
