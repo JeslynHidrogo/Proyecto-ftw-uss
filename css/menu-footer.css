@@ -98,7 +98,7 @@ body {
     max-width: 85%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     height: 100%;
 }
