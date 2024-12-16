@@ -13,7 +13,7 @@
 
     .logo-img,
     .logo p {
-        display: none;
+        display: none;  /* desaparec */
     }
 
     .logo h3 {

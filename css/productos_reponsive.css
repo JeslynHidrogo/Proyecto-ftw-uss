@@ -39,10 +39,6 @@
         font-weight: 600;
     }
 
-    .gtr-title h1::before,
-    .gtr-title h1::after {
-        content: none;
-    }
 
     .hero-gt-title p {
 

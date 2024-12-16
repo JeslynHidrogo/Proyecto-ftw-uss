@@ -19,28 +19,29 @@ body {
 }
 
 .hero-gt-ctn {
-    max-width: 80%;
-    margin: auto;
-    height: 100%;
+    max-width: 80%; /* ancho */
+    margin: auto; /* centrado */
+    height: 100%; /* altura */
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .hero-gt-title {
-    flex: 1;
+    flex: 1;     /* mismo espacio */
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column;   /* columna */    /* invierte */
+    justify-content: center; /* centra eje x */
+    /* align item centra eje y:  */
 }
 
 .hero-gt-title h1 {
     font-size: 3rem;
     color: #160402;
-    line-height: 60px;
-    margin-bottom: 19px;
-    font-weight: 600;
+    line-height: 60px; /* interlineado */
+    margin-bottom: 19px; /* espacio debajo */
+    font-weight: 600; /* peso letra */
 }
 
 
@@ -67,9 +68,9 @@ body {
 }
 
 .hero-gt-img {
-    flex: 1;
+    flex: 1; 
     height: 100%;
-    display: flex;
+    display: flex; /* centrar img*/
     align-items: center;
     justify-content: center;
 }
@@ -117,20 +118,10 @@ body {
 
 
 
-.gtr-title h1::before {
-    margin-right: 20px;
-}
-
-.gtr-title h1::after {
-    margin-left: 20px;
-}
-
-
-
-.gtr-cards {
+.gtr-cards { 
     width: 100%;
     margin-top: 5vh;
-    display: flex;
+    display: flex;  /*  */
     align-items: center;
     justify-content: space-between;
     gap: 30px;
@@ -167,8 +158,6 @@ body {
     margin: 25px 0 15px 0;
     cursor: pointer;
     width: 60%;
-    margin: 25px 0 15px 0;
-    cursor: pointer;
 }
 
 

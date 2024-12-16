@@ -1,4 +1,4 @@
-
+/* captas datos y validas */
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
     const usernameInput = form.querySelector("input[type='text']");

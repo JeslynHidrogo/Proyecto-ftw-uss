@@ -243,7 +243,7 @@ options.forEach(option => {
         if (option.id === 'delivery') {
             deliveryDetails.innerHTML = '<p>Introduce tu dirección:</p><input type="text" placeholder="Dirección completa" />';
         } else {
-            deliveryDetails.innerHTML = '<p>La dirección de la tienda es: Calle Ejemplo 123.</p>';
+            deliveryDetails.innerHTML = '<p>La dirección de la tienda es: Calle Cuglievan #884.</p>';
         }
     };
 });

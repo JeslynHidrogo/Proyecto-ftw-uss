@@ -1,11 +1,12 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+/* hacer el carrito visible - click */
 function toggleModal() {
     const modal = document.getElementById('cartModal');
     modal.style.display = modal.style.display === 'block' ? 'none' : 'block';
     displayCart();
 }
-
+/* declarar constantes */
 function addToCart(card) {
     const productId = card.getAttribute('data-id');
     const productName = card.querySelector('h2').textContent;
@@ -19,7 +20,7 @@ function addToCart(card) {
         image: productImage,
         quantity: 1
     };
-
+/* producto > 1*/ 
     const existingProductIndex = cart.findIndex(item => item.id === productId);
     if (existingProductIndex >= 0) {
         cart[existingProductIndex].quantity++;
@@ -37,7 +38,7 @@ function displayCart() {
     const totalPriceElement = document.getElementById('totalPrice');
     cartItems.innerHTML = '';
     let totalPrice = 0;
-
+/* crea el div */
     cart.forEach(item => {
         totalPrice += item.price * item.quantity;
         const itemDiv = document.createElement('div');
@@ -59,7 +60,7 @@ function displayCart() {
 
     totalPriceElement.textContent = `Total: S/${totalPrice.toFixed(2)}`;
 }
-
+/* cambiar cantidad */
 function changeQuantity(productId, change) {
     const productIndex = cart.findIndex(item => item.id === productId);
     if (productIndex >= 0) {

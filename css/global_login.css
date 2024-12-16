@@ -25,7 +25,7 @@ body {
     width: 100%;
 }
 
-.form-container::before,
+.form-container::before,   /* imagen de fondo */
 .form-containerr::before {
     content: '';
     position: absolute;
@@ -45,7 +45,7 @@ body {
     width: 350px;
     height: 450px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden;    /* respete bordes contenedor */
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid white;
@@ -100,12 +100,12 @@ body {
     text-decoration: underline;
 }
 
-/* la seccion del logueo*/
+/* la seccion del logueo - derecha*/
 .login-box {
     border-radius: 0px 5px 5px 0;
     padding: 40px;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);    /* opaco */
+    -webkit-backdrop-filter: blur(10px); /* navegadores comp */
     width: 320px;
     text-align: center;
     border: 1px solid white;
@@ -133,7 +133,7 @@ h2 {
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
+    transform: translateY(-50%);    /* letras suben */
     color: #ffa971;
     font-size: 0.8rem;
     pointer-events: none;
